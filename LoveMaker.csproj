@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <StartupObject>LoveMaker.main</StartupObject>
+    <ApplicationIcon>maker.ico</ApplicationIcon>
+    <NoWin32Manifest>true</NoWin32Manifest>
+    <RootNamespace>MTLabs</RootNamespace>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Authors>MTadder</Authors>
+    <Company>MTLaboratory</Company>
+    <Version>0.0.1.1</Version>
+    <PackageId>Santa-Power</PackageId>
+    <Description>LOVE2D packager &amp; builder, for GNU and Windows.</Description>
+    <PackageProjectUrl></PackageProjectUrl>
+    <PackageIcon>maker.png</PackageIcon>
+    <PackageIconUrl />
+    <RepositoryUrl>https://github.com/MTadder/LoveMaker</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <NeutralLanguage>en-CA</NeutralLanguage>
+    <SignAssembly>false</SignAssembly>
+    <AnalysisLevel>latest</AnalysisLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>false</Optimize>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\maker.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
