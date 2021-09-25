@@ -33,6 +33,12 @@ namespace LoveMaker
             this.TCVariables = new System.Windows.Forms.TabControl();
             this.TPEnvrionment = new System.Windows.Forms.TabPage();
             this.GBPaths = new System.Windows.Forms.GroupBox();
+            this.GBRuntime = new System.Windows.Forms.GroupBox();
+            this.TBRuntimeLog = new System.Windows.Forms.TextBox();
+            this.TBMoonPath = new System.Windows.Forms.TextBox();
+            this.TBLuaPath = new System.Windows.Forms.TextBox();
+            this.RBValidMoonscript = new System.Windows.Forms.RadioButton();
+            this.RBValidLua = new System.Windows.Forms.RadioButton();
             this.RBValidRoot = new System.Windows.Forms.RadioButton();
             this.BOpenProject = new System.Windows.Forms.Button();
             this.BRefreshEnv = new System.Windows.Forms.Button();
@@ -41,7 +47,7 @@ namespace LoveMaker
             this.GBConfVariables = new System.Windows.Forms.GroupBox();
             this.TVVariables = new System.Windows.Forms.TreeView();
             this.TPBuild = new System.Windows.Forms.TabPage();
-            this.LRequirements = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.CLBIncludes = new System.Windows.Forms.CheckedListBox();
             this.MSToolbar = new System.Windows.Forms.MenuStrip();
             this.TSMIProjects = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,20 +60,21 @@ namespace LoveMaker
             this.TSMIExit = new System.Windows.Forms.ToolStripMenuItem();
             this.GBControls = new System.Windows.Forms.GroupBox();
             this.LOperation = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TBVersion = new System.Windows.Forms.TextBox();
             this.LVersion = new System.Windows.Forms.Label();
             this.LStatus = new System.Windows.Forms.Label();
             this.PBOperation = new System.Windows.Forms.ProgressBar();
             this.CBOperation = new System.Windows.Forms.ComboBox();
             this.BExecute = new System.Windows.Forms.Button();
             this.FBDExplorer = new System.Windows.Forms.FolderBrowserDialog();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.TCVariables.SuspendLayout();
             this.TPEnvrionment.SuspendLayout();
             this.GBPaths.SuspendLayout();
+            this.GBRuntime.SuspendLayout();
             this.TPConf.SuspendLayout();
             this.GBConfVariables.SuspendLayout();
             this.TPBuild.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.MSToolbar.SuspendLayout();
             this.GBControls.SuspendLayout();
             this.SuspendLayout();
@@ -84,7 +91,6 @@ namespace LoveMaker
             // TPEnvrionment
             // 
             resources.ApplyResources(this.TPEnvrionment, "TPEnvrionment");
-            this.TPEnvrionment.Controls.Add(this.groupBox1);
             this.TPEnvrionment.Controls.Add(this.GBPaths);
             this.TPEnvrionment.Name = "TPEnvrionment";
             this.TPEnvrionment.UseVisualStyleBackColor = true;
@@ -92,12 +98,56 @@ namespace LoveMaker
             // GBPaths
             // 
             resources.ApplyResources(this.GBPaths, "GBPaths");
+            this.GBPaths.Controls.Add(this.GBRuntime);
+            this.GBPaths.Controls.Add(this.TBMoonPath);
+            this.GBPaths.Controls.Add(this.TBLuaPath);
+            this.GBPaths.Controls.Add(this.RBValidMoonscript);
+            this.GBPaths.Controls.Add(this.RBValidLua);
             this.GBPaths.Controls.Add(this.RBValidRoot);
             this.GBPaths.Controls.Add(this.BOpenProject);
             this.GBPaths.Controls.Add(this.BRefreshEnv);
             this.GBPaths.Controls.Add(this.TBProjectPath);
             this.GBPaths.Name = "GBPaths";
             this.GBPaths.TabStop = false;
+            // 
+            // GBRuntime
+            // 
+            resources.ApplyResources(this.GBRuntime, "GBRuntime");
+            this.GBRuntime.Controls.Add(this.TBRuntimeLog);
+            this.GBRuntime.Name = "GBRuntime";
+            this.GBRuntime.TabStop = false;
+            // 
+            // TBRuntimeLog
+            // 
+            resources.ApplyResources(this.TBRuntimeLog, "TBRuntimeLog");
+            this.TBRuntimeLog.Name = "TBRuntimeLog";
+            this.TBRuntimeLog.ReadOnly = true;
+            // 
+            // TBMoonPath
+            // 
+            resources.ApplyResources(this.TBMoonPath, "TBMoonPath");
+            this.TBMoonPath.Name = "TBMoonPath";
+            this.TBMoonPath.ReadOnly = true;
+            // 
+            // TBLuaPath
+            // 
+            resources.ApplyResources(this.TBLuaPath, "TBLuaPath");
+            this.TBLuaPath.Name = "TBLuaPath";
+            this.TBLuaPath.ReadOnly = true;
+            // 
+            // RBValidMoonscript
+            // 
+            resources.ApplyResources(this.RBValidMoonscript, "RBValidMoonscript");
+            this.RBValidMoonscript.Name = "RBValidMoonscript";
+            this.RBValidMoonscript.TabStop = true;
+            this.RBValidMoonscript.UseVisualStyleBackColor = true;
+            // 
+            // RBValidLua
+            // 
+            resources.ApplyResources(this.RBValidLua, "RBValidLua");
+            this.RBValidLua.Name = "RBValidLua";
+            this.RBValidLua.TabStop = true;
+            this.RBValidLua.UseVisualStyleBackColor = true;
             // 
             // RBValidRoot
             // 
@@ -118,6 +168,7 @@ namespace LoveMaker
             resources.ApplyResources(this.BRefreshEnv, "BRefreshEnv");
             this.BRefreshEnv.Name = "BRefreshEnv";
             this.BRefreshEnv.UseVisualStyleBackColor = true;
+            this.BRefreshEnv.Click += new System.EventHandler(this.BRefreshEnv_Click);
             // 
             // TBProjectPath
             // 
@@ -147,15 +198,16 @@ namespace LoveMaker
             // TPBuild
             // 
             resources.ApplyResources(this.TPBuild, "TPBuild");
-            this.TPBuild.Controls.Add(this.LRequirements);
-            this.TPBuild.Controls.Add(this.CLBIncludes);
+            this.TPBuild.Controls.Add(this.groupBox1);
             this.TPBuild.Name = "TPBuild";
             this.TPBuild.UseVisualStyleBackColor = true;
             // 
-            // LRequirements
+            // groupBox1
             // 
-            resources.ApplyResources(this.LRequirements, "LRequirements");
-            this.LRequirements.Name = "LRequirements";
+            resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.Controls.Add(this.CLBIncludes);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.TabStop = false;
             // 
             // CLBIncludes
             // 
@@ -225,7 +277,7 @@ namespace LoveMaker
             // 
             resources.ApplyResources(this.GBControls, "GBControls");
             this.GBControls.Controls.Add(this.LOperation);
-            this.GBControls.Controls.Add(this.textBox1);
+            this.GBControls.Controls.Add(this.TBVersion);
             this.GBControls.Controls.Add(this.LVersion);
             this.GBControls.Controls.Add(this.LStatus);
             this.GBControls.Controls.Add(this.PBOperation);
@@ -239,10 +291,10 @@ namespace LoveMaker
             resources.ApplyResources(this.LOperation, "LOperation");
             this.LOperation.Name = "LOperation";
             // 
-            // textBox1
+            // TBVersion
             // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
+            resources.ApplyResources(this.TBVersion, "TBVersion");
+            this.TBVersion.Name = "TBVersion";
             // 
             // LVersion
             // 
@@ -284,12 +336,6 @@ namespace LoveMaker
             this.FBDExplorer.RootFolder = System.Environment.SpecialFolder.MyComputer;
             this.FBDExplorer.ShowNewFolderButton = false;
             // 
-            // groupBox1
-            // 
-            resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.TabStop = false;
-            // 
             // MainWindow
             // 
             resources.ApplyResources(this, "$this");
@@ -304,10 +350,12 @@ namespace LoveMaker
             this.TPEnvrionment.ResumeLayout(false);
             this.GBPaths.ResumeLayout(false);
             this.GBPaths.PerformLayout();
+            this.GBRuntime.ResumeLayout(false);
+            this.GBRuntime.PerformLayout();
             this.TPConf.ResumeLayout(false);
             this.GBConfVariables.ResumeLayout(false);
             this.TPBuild.ResumeLayout(false);
-            this.TPBuild.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             this.MSToolbar.ResumeLayout(false);
             this.MSToolbar.PerformLayout();
             this.GBControls.ResumeLayout(false);
@@ -337,7 +385,7 @@ namespace LoveMaker
         private System.Windows.Forms.Label LVersion;
         private System.Windows.Forms.Label LStatus;
         private System.Windows.Forms.ProgressBar PBOperation;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TBVersion;
         private System.Windows.Forms.Label LOperation;
         private System.Windows.Forms.TabPage TPConf;
         private System.Windows.Forms.GroupBox GBPaths;
@@ -348,9 +396,14 @@ namespace LoveMaker
         private System.Windows.Forms.FolderBrowserDialog FBDExplorer;
         private System.Windows.Forms.RadioButton RBValidRoot;
         private System.Windows.Forms.TreeView TVVariables;
-        private System.Windows.Forms.Label LRequirements;
         private System.Windows.Forms.CheckedListBox CLBIncludes;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox TBMoonPath;
+        private System.Windows.Forms.TextBox TBLuaPath;
+        private System.Windows.Forms.RadioButton RBValidMoonscript;
+        private System.Windows.Forms.RadioButton RBValidLua;
+        private System.Windows.Forms.GroupBox GBRuntime;
+        private System.Windows.Forms.TextBox TBRuntimeLog;
     }
 }
 

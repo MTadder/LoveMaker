@@ -57,593 +57,620 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;TVVariables.Parent" xml:space="preserve">
-    <value>GBConfVariables</value>
-  </data>
-  <data name="CBOperation.Items1" xml:space="preserve">
-    <value>Execute (Run)</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="MSToolbar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="TPBuildPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 24</value>
-  </data>
-  <data name="CBOperation.Items2" xml:space="preserve">
-    <value>Package (Build)</value>
-  </data>
-  <data name="&gt;&gt;CBOperation.Parent" xml:space="preserve">
-    <value>GBControls</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>674, 381</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;radioButton1.Name" xml:space="preserve">
-    <value>radioButton1</value>
-  </data>
-  <data name="&gt;&gt;GBControls.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="TBProjectPath.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="GBControls.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 307</value>
-  </data>
-  <data name="&gt;&gt;GBControls.Name" xml:space="preserve">
-    <value>GBControls</value>
-  </data>
-  <data name="BOpenProject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="gitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="&gt;&gt;PBOperation.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;radioButton1.Parent" xml:space="preserve">
-    <value>GBPaths</value>
-  </data>
-  <data name="generateToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="&gt;&gt;LVersion.Type" xml:space="preserve">
+  <data name="&gt;&gt;LOperation.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TSMIProjects.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="GBConfVariables.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;PBOperation.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="radioButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 26</value>
-  </data>
-  <data name="CBOperation.Items" xml:space="preserve">
-    <value>Custom Operation</value>
-  </data>
-  <data name="&gt;&gt;LOperation.Parent" xml:space="preserve">
-    <value>GBControls</value>
-  </data>
-  <data name="CLBIncludes.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="LBVariables.Items2" xml:space="preserve">
-    <value>appendidentity</value>
-  </data>
-  <data name="LBVariables.Items15" xml:space="preserve">
-    <value>window.resizable</value>
-  </data>
-  <data name="&gt;&gt;TCVariables.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="GBPaths.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;TBProjectPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="TPEnvrionment.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
-    <value>GBConfVariables</value>
-  </data>
-  <data name="GBPaths.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
-  </data>
-  <data name="&gt;&gt;TPEnvrionment.Parent" xml:space="preserve">
-    <value>TCVariables</value>
-  </data>
-  <data name="&gt;&gt;TBProjectPath.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="TVVariables.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 22</value>
-  </data>
-  <data name="&gt;&gt;exitToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="TPEnvrionment.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 24</value>
-  </data>
-  <data name="&gt;&gt;LStatus.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="BNewProject.Location" type="System.Drawing.Point, System.Drawing">
-    <value>118, 205</value>
   </data>
   <data name="&gt;&gt;PBOperation.Name" xml:space="preserve">
     <value>PBOperation</value>
   </data>
-  <data name="&gt;&gt;TVVariables.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="projectToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 20</value>
-  </data>
-  <data name="RBValidRoot.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 26</value>
-  </data>
-  <data name="LBVariables.Items8" xml:space="preserve">
-    <value>window.width</value>
-  </data>
-  <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 121</value>
-  </data>
-  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;CLBIncludes.Parent" xml:space="preserve">
-    <value>TPBuild</value>
-  </data>
-  <data name="&gt;&gt;LStatus.Parent" xml:space="preserve">
-    <value>GBControls</value>
-  </data>
-  <data name="BRefreshEnv.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;LRequirements.Parent" xml:space="preserve">
-    <value>TPBuild</value>
-  </data>
-  <data name="&gt;&gt;BNewProject.Name" xml:space="preserve">
-    <value>BNewProject</value>
-  </data>
-  <data name="TSMIProjects.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 20</value>
-  </data>
-  <data name="LBVariables.Items13" xml:space="preserve">
-    <value>window.icon</value>
-  </data>
-  <data name="&gt;&gt;TCVariables.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;TBProjectPath.Name" xml:space="preserve">
-    <value>TBProjectPath</value>
-  </data>
-  <data name="BNewProject.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;BNewProject.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GBControls.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>209, 29</value>
-  </data>
-  <data name="&gt;&gt;TBLovePath.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="TSMIVersioning.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="BRefreshEnv.Location" type="System.Drawing.Point, System.Drawing">
-    <value>224, 205</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls /&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50,Absolute,20,Absolute,20,Absolute,20,Absolute,20,Absolute,20,Absolute,20,Absolute,20,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="LVersion.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;MSToolbar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;listView1.Name" xml:space="preserve">
-    <value>listView1</value>
-  </data>
-  <data name="RBValidRoot.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="LBVariables.Items6" xml:space="preserve">
-    <value>accelerometerjoystick</value>
-  </data>
-  <data name="&gt;&gt;CLBIncludes.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="LBVariables.Items9" xml:space="preserve">
-    <value>window.height</value>
-  </data>
-  <data name="&gt;&gt;GBPaths.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
-    <value>toolStripSeparator1</value>
-  </data>
-  <data name="&gt;&gt;BRefreshEnv.Name" xml:space="preserve">
-    <value>BRefreshEnv</value>
-  </data>
-  <data name="&gt;&gt;FBDExplorer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FolderBrowserDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="listView1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="BRefreshEnv.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="&gt;&gt;TPEnvrionment.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;generateToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;LStatus.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;openToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="PBOperation.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="LVersion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>209, 11</value>
-  </data>
-  <data name="&gt;&gt;toolsToolStripMenuItem.Name" xml:space="preserve">
-    <value>toolsToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;MSToolbar.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="versioningToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="&gt;&gt;gitToolStripMenuItem.Name" xml:space="preserve">
-    <value>gitToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;TVVariables.Name" xml:space="preserve">
-    <value>TVVariables</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>MainWindow</value>
-  </data>
-  <data name="CLBIncludes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>381, 21</value>
-  </data>
   <data name="LBVariables.Items" xml:space="preserve">
     <value>identity</value>
   </data>
-  <data name="&gt;&gt;LOperation.Name" xml:space="preserve">
-    <value>LOperation</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="TBVersion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>209, 29</value>
   </data>
-  <data name="LBVariables.Items4" xml:space="preserve">
-    <value>externalstorage</value>
-  </data>
-  <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="LBVariables.Items5" xml:space="preserve">
-    <value>gammacorrect</value>
-  </data>
-  <data name="&gt;&gt;gitToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="progressBar1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;CBOperation.Name" xml:space="preserve">
-    <value>CBOperation</value>
-  </data>
-  <data name="&gt;&gt;RBValidRoot.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>LoveMaker</value>
-  </data>
-  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 179</value>
-  </data>
-  <data name="löveToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="&gt;&gt;TPConf.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;LStatus.Name" xml:space="preserve">
-    <value>LStatus</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;radioButton1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TPBuildPanel.Parent" xml:space="preserve">
-    <value>TCVariables</value>
-  </data>
-  <data name="&gt;&gt;LVersion.Parent" xml:space="preserve">
+  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
     <value>GBControls</value>
   </data>
-  <data name="LBVariables.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="&gt;&gt;TBVersion.Name" xml:space="preserve">
+    <value>TBVersion</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
-    <value>TPEnvrionment</value>
+  <data name="CBOperation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>385, 29</value>
   </data>
-  <data name="TPConf.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;TSMIExit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TSMIExit.Name" xml:space="preserve">
-    <value>TSMIExit</value>
-  </data>
-  <data name="BNewProject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="&gt;&gt;GBControls.Parent" xml:space="preserve">
+  <data name="&gt;&gt;TCVariables.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;progressBar1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="LOperation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>385, 11</value>
+  <data name="&gt;&gt;toolsToolStripMenuItem.Name" xml:space="preserve">
+    <value>toolsToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;TPBuildPanel.Name" xml:space="preserve">
-    <value>TPBuildPanel</value>
+  <data name="&gt;&gt;projectToolStripMenuItem.Name" xml:space="preserve">
+    <value>projectToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;GBPaths.Name" xml:space="preserve">
-    <value>GBPaths</value>
+  <data name="&gt;&gt;LVersion.Name" xml:space="preserve">
+    <value>LVersion</value>
   </data>
-  <data name="steamToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+  <data name="GBConfVariables.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
   </data>
-  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="GBConfVariables.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;manifestToolStripMenuItem.Name" xml:space="preserve">
+    <value>manifestToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;BExecute.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;TCVariables.Name" xml:space="preserve">
+    <value>TCVariables</value>
+  </data>
+  <data name="&gt;&gt;BNewProject.Name" xml:space="preserve">
+    <value>BNewProject</value>
+  </data>
+  <data name="&gt;&gt;generateToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;openToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gitToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RBValidRoot.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 20</value>
-  </data>
-  <data name="&gt;&gt;steamToolStripMenuItem.Name" xml:space="preserve">
-    <value>steamToolStripMenuItem</value>
-  </data>
-  <data name="LStatus.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;GBConfVariables.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;progressBar1.Parent" xml:space="preserve">
-    <value>GBConfVariables</value>
-  </data>
-  <data name="TBLovePath.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;TSMILove.Name" xml:space="preserve">
-    <value>TSMILove</value>
-  </data>
-  <data name="&gt;&gt;TPBuildPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;listView1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="TPConf.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 24</value>
+  <data name="&gt;&gt;GBRuntime.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="TVVariables.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;BRefreshEnv.Parent" xml:space="preserve">
+    <value>GBPaths</value>
+  </data>
+  <data name="CBOperation.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;TPBuild.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;LRequirements.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;CLBIncludes.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;listView1.Name" xml:space="preserve">
+    <value>listView1</value>
+  </data>
+  <data name="LBVariables.Items4" xml:space="preserve">
+    <value>externalstorage</value>
+  </data>
+  <data name="&gt;&gt;TBProjectPath.Name" xml:space="preserve">
+    <value>TBProjectPath</value>
+  </data>
+  <data name="&gt;&gt;TBRuntimeLog.Name" xml:space="preserve">
+    <value>TBRuntimeLog</value>
+  </data>
+  <data name="BOpenProject.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;GBPaths.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>132, 22</value>
   </data>
-  <data name="&gt;&gt;MSToolbar.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;BExecute.Name" xml:space="preserve">
+    <value>BExecute</value>
   </data>
-  <data name="&gt;&gt;CBOperation.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="PBOperation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 29</value>
-  </data>
-  <data name="&gt;&gt;LVersion.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="TSMIExit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 20</value>
-  </data>
-  <data name="BExecute.Location" type="System.Drawing.Point, System.Drawing">
-    <value>565, 22</value>
-  </data>
-  <data name="&gt;&gt;TCVariables.Name" xml:space="preserve">
-    <value>TCVariables</value>
-  </data>
-  <data name="&gt;&gt;LBVariables.Parent" xml:space="preserve">
-    <value>GBConfVariables</value>
-  </data>
-  <data name="LBVariables.Items3" xml:space="preserve">
-    <value>console</value>
-  </data>
-  <data name="TCVariables.TabIndex" type="System.Int32, mscorlib">
+  <data name="TVVariables.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="&gt;&gt;RBValidLua.Name" xml:space="preserve">
+    <value>RBValidLua</value>
   </data>
-  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;LStatus.Name" xml:space="preserve">
+    <value>LStatus</value>
   </data>
-  <data name="&gt;&gt;manifestToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;LRequirements.Parent" xml:space="preserve">
+    <value>TPBuild</value>
   </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 100</value>
+  <data name="TPBuild.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
   </data>
-  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
-    <value>textBox2</value>
-  </data>
-  <data name="&gt;&gt;generateToolStripMenuItem.Name" xml:space="preserve">
-    <value>generateToolStripMenuItem</value>
-  </data>
-  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 6</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;BOpenProject.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;openToolStripMenuItem.Name" xml:space="preserve">
-    <value>openToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;RBValidRoot.Name" xml:space="preserve">
-    <value>RBValidRoot</value>
-  </data>
-  <data name="&gt;&gt;TPEnvrionment.Name" xml:space="preserve">
-    <value>TPEnvrionment</value>
-  </data>
-  <data name="&gt;&gt;GBConfVariables.Parent" xml:space="preserve">
-    <value>TPConf</value>
-  </data>
-  <data name="&gt;&gt;MSToolbar.Name" xml:space="preserve">
-    <value>MSToolbar</value>
-  </data>
-  <data name="&gt;&gt;TSMISteam.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;LRequirements.Name" xml:space="preserve">
-    <value>LRequirements</value>
-  </data>
-  <data name="listView1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
-  </data>
-  <data name="&gt;&gt;LOperation.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="BOpenProject.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 205</value>
-  </data>
-  <data name="BExecute.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="LBVariables.Items10" xml:space="preserve">
-    <value>window.x</value>
-  </data>
-  <data name="&gt;&gt;BRefreshEnv.Parent" xml:space="preserve">
-    <value>GBPaths</value>
-  </data>
-  <data name="&gt;&gt;LVersion.Name" xml:space="preserve">
-    <value>LVersion</value>
-  </data>
-  <data name="LBVariables.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 22</value>
-  </data>
-  <data name="CBOperation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>385, 29</value>
-  </data>
-  <data name="&gt;&gt;BNewProject.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;TBVersion.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="&gt;&gt;TBLovePath.Name" xml:space="preserve">
     <value>TBLovePath</value>
   </data>
-  <data name="TSMILove.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+  <data name="&gt;&gt;TVVariables.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;TBProjectPath.Parent" xml:space="preserve">
+  <data name="&gt;&gt;gitToolStripMenuItem.Name" xml:space="preserve">
+    <value>gitToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;radioButton1.Name" xml:space="preserve">
+    <value>radioButton1</value>
+  </data>
+  <data name="&gt;&gt;RBValidMoonscript.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>630, 380</value>
+  </data>
+  <data name="&gt;&gt;FBDExplorer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FolderBrowserDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LStatus.Parent" xml:space="preserve">
+    <value>GBControls</value>
+  </data>
+  <data name="&gt;&gt;TBLuaPath.Parent" xml:space="preserve">
     <value>GBPaths</value>
   </data>
-  <data name="LBVariables.Items11" xml:space="preserve">
-    <value>window.y</value>
+  <data name="TSMISteam.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
   </data>
-  <data name="&gt;&gt;GBConfVariables.Name" xml:space="preserve">
-    <value>GBConfVariables</value>
+  <data name="GBPaths.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
+  <data name="&gt;&gt;RBValidRoot.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GBControls.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LBVariables.Items3" xml:space="preserve">
+    <value>console</value>
+  </data>
+  <data name="&gt;&gt;listView1.Parent" xml:space="preserve">
+    <value>TPEnvrionment</value>
+  </data>
+  <data name="LStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 11</value>
+  </data>
+  <data name="&gt;&gt;CLBIncludes.Name" xml:space="preserve">
+    <value>CLBIncludes</value>
+  </data>
+  <data name="&gt;&gt;TBLuaPath.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
-    <value>textBox1</value>
+  <data name="LRequirements.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="openToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="&gt;&gt;versioningToolStripMenuItem.Name" xml:space="preserve">
-    <value>versioningToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;RBValidRoot.Parent" xml:space="preserve">
+  <data name="&gt;&gt;BNewProject.Parent" xml:space="preserve">
     <value>GBPaths</value>
   </data>
-  <data name="&gt;&gt;TPBuildPanel.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="LBVariables.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 22</value>
+  </data>
+  <data name="&gt;&gt;TSMIProjects.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PBOperation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;GBPaths.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TBMoonPath.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="CBOperation.Items2" xml:space="preserve">
+    <value>Package (Build)</value>
+  </data>
+  <data name="&gt;&gt;TBRuntimeLog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TSMIVersioning.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;exitToolStripMenuItem.Name" xml:space="preserve">
     <value>exitToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;radioButton1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="radioButton1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="CBOperation.TabIndex" type="System.Int32, mscorlib">
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 100</value>
+  <data name="LBVariables.Items7" xml:space="preserve">
+    <value>audio.mixwithsystem</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
+    <value>toolStripSeparator1</value>
+  </data>
+  <data name="BRefreshEnv.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="TBProjectPath.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;RBValidMoonscript.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LOperation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>385, 11</value>
+  </data>
+  <data name="&gt;&gt;BNewProject.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>TPBuild</value>
+  </data>
+  <data name="LBVariables.Items11" xml:space="preserve">
+    <value>window.y</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TSMIVersioning.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TBLovePath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LVersion.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;TPBuild.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TBLovePath.Parent" xml:space="preserve">
+    <value>GBPaths</value>
+  </data>
+  <data name="&gt;&gt;LBVariables.Name" xml:space="preserve">
+    <value>LBVariables</value>
+  </data>
+  <data name="TBLovePath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 51</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="&gt;&gt;TSMISteam.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BExecute.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="TPConf.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;GBPaths.Parent" xml:space="preserve">
+    <value>TPEnvrionment</value>
+  </data>
+  <data name="CLBIncludes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 21</value>
+  </data>
+  <data name="RBValidRoot.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 26</value>
+  </data>
+  <data name="&gt;&gt;toolsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton1.Parent" xml:space="preserve">
+    <value>GBPaths</value>
+  </data>
+  <data name="&gt;&gt;GBConfVariables.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CBOperation.Parent" xml:space="preserve">
+    <value>GBControls</value>
+  </data>
+  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="LBVariables.Items15" xml:space="preserve">
+    <value>window.resizable</value>
+  </data>
+  <data name="&gt;&gt;TPBuildPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="GBRuntime.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;GBRuntime.Parent" xml:space="preserve">
+    <value>GBPaths</value>
+  </data>
+  <data name="BOpenProject.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 205</value>
+  </data>
+  <data name="&gt;&gt;TBProjectPath.Parent" xml:space="preserve">
+    <value>GBPaths</value>
+  </data>
+  <data name="LBVariables.Items8" xml:space="preserve">
+    <value>window.width</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 6</value>
+  </data>
+  <data name="&gt;&gt;TSMIExit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
+    <value>GBConfVariables</value>
+  </data>
+  <data name="&gt;&gt;listView1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;BOpenProject.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;löveToolStripMenuItem.Name" xml:space="preserve">
+    <value>löveToolStripMenuItem</value>
+  </data>
+  <data name="PBOperation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 29</value>
+  </data>
+  <data name="PBOperation.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;TVVariables.Parent" xml:space="preserve">
+    <value>GBConfVariables</value>
+  </data>
+  <data name="LRequirements.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 3</value>
+  </data>
+  <data name="&gt;&gt;TBRuntimeLog.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;PBOperation.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;LStatus.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="TBRuntimeLog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 22</value>
+  </data>
+  <data name="&gt;&gt;TBMoonPath.Parent" xml:space="preserve">
+    <value>GBPaths</value>
+  </data>
+  <data name="&gt;&gt;TVVariables.Name" xml:space="preserve">
+    <value>TVVariables</value>
+  </data>
+  <data name="&gt;&gt;TPEnvrionment.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CBOperation.Items1" xml:space="preserve">
+    <value>Execute (Run)</value>
+  </data>
+  <data name="&gt;&gt;CLBIncludes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GBControls.Name" xml:space="preserve">
+    <value>GBControls</value>
+  </data>
+  <data name="&gt;&gt;PBOperation.Parent" xml:space="preserve">
+    <value>GBControls</value>
+  </data>
+  <data name="TVVariables.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 22</value>
+  </data>
+  <data name="GBPaths.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="&gt;&gt;CBOperation.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;RBValidLua.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;FBDExplorer.Name" xml:space="preserve">
+    <value>FBDExplorer</value>
+  </data>
+  <data name="TCVariables.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 27</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;LOperation.Name" xml:space="preserve">
+    <value>LOperation</value>
+  </data>
+  <data name="&gt;&gt;RBValidRoot.Name" xml:space="preserve">
+    <value>RBValidRoot</value>
+  </data>
+  <data name="&gt;&gt;TCVariables.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BNewProject.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 205</value>
+  </data>
+  <data name="&gt;&gt;löveToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LBVariables.Items9" xml:space="preserve">
+    <value>window.height</value>
+  </data>
+  <data name="GBControls.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="openToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="MSToolbar.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;steamToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="toolsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 20</value>
+  </data>
+  <data name="&gt;&gt;TPConf.Name" xml:space="preserve">
+    <value>TPConf</value>
+  </data>
+  <data name="&gt;&gt;TPConf.Parent" xml:space="preserve">
+    <value>TCVariables</value>
+  </data>
+  <data name="&gt;&gt;BExecute.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;RBValidRoot.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;TPEnvrionment.Name" xml:space="preserve">
+    <value>TPEnvrionment</value>
+  </data>
+  <data name="&gt;&gt;TSMILove.Name" xml:space="preserve">
+    <value>TSMILove</value>
+  </data>
+  <data name="LBVariables.Items12" xml:space="preserve">
+    <value>window.title</value>
+  </data>
+  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
+    <value>textBox2</value>
+  </data>
+  <data name="GBControls.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 307</value>
   </data>
   <data name="&gt;&gt;progressBar1.Name" xml:space="preserve">
     <value>progressBar1</value>
   </data>
-  <data name="&gt;&gt;LRequirements.Type" xml:space="preserve">
+  <data name="&gt;&gt;LStatus.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
+  <data name="BExecute.Location" type="System.Drawing.Point, System.Drawing">
+    <value>565, 22</value>
+  </data>
+  <data name="TBLuaPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 51</value>
+  </data>
+  <data name="&gt;&gt;CLBIncludes.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="BOpenProject.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;RBValidLua.Parent" xml:space="preserve">
+    <value>GBPaths</value>
+  </data>
+  <data name="TBRuntimeLog.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="LBVariables.Items2" xml:space="preserve">
+    <value>appendidentity</value>
+  </data>
+  <data name="projectToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 20</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="GBRuntime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 111</value>
+  </data>
+  <data name="&gt;&gt;BOpenProject.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>674, 381</value>
+  </data>
+  <data name="&gt;&gt;MSToolbar.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="LBVariables.Items1" xml:space="preserve">
-    <value>version</value>
+  <data name="&gt;&gt;GBConfVariables.Name" xml:space="preserve">
+    <value>GBConfVariables</value>
   </data>
-  <data name="toolsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="&gt;&gt;GBPaths.Name" xml:space="preserve">
+    <value>GBPaths</value>
+  </data>
+  <data name="&gt;&gt;TBVersion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="listView1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="&gt;&gt;MSToolbar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GBRuntime.Name" xml:space="preserve">
+    <value>GBRuntime</value>
+  </data>
+  <data name="TPBuild.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="TBVersion.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;BOpenProject.Name" xml:space="preserve">
+    <value>BOpenProject</value>
+  </data>
+  <data name="&gt;&gt;steamToolStripMenuItem.Name" xml:space="preserve">
+    <value>steamToolStripMenuItem</value>
+  </data>
+  <data name="LBVariables.Items13" xml:space="preserve">
+    <value>window.icon</value>
+  </data>
+  <data name="&gt;&gt;GBRuntime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TBLuaPath.Name" xml:space="preserve">
+    <value>TBLuaPath</value>
+  </data>
+  <data name="&gt;&gt;versioningToolStripMenuItem.Name" xml:space="preserve">
+    <value>versioningToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
+    <value>GBConfVariables</value>
+  </data>
+  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls /&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50,Absolute,20,Absolute,20,Absolute,20,Absolute,20,Absolute,20,Absolute,20,Absolute,20,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="&gt;&gt;TPBuild.Name" xml:space="preserve">
+    <value>TPBuild</value>
+  </data>
+  <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 20</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;RBValidMoonscript.Parent" xml:space="preserve">
+    <value>GBPaths</value>
+  </data>
+  <data name="TSMITools.Size" type="System.Drawing.Size, System.Drawing">
     <value>46, 20</value>
+  </data>
+  <data name="&gt;&gt;progressBar1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;GBControls.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LOperation.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TPConf.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="BNewProject.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2267,253 +2294,352 @@
         4AcAAA==
 </value>
   </data>
-  <data name="LRequirements.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;GBPaths.Parent" xml:space="preserve">
-    <value>TPEnvrionment</value>
-  </data>
-  <data name="&gt;&gt;GBConfVariables.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CLBIncludes.Name" xml:space="preserve">
-    <value>CLBIncludes</value>
-  </data>
-  <data name="TPBuildPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;BOpenProject.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;LBVariables.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="TBProjectPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 22</value>
   </data>
   <data name="&gt;&gt;projectToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;löveToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;openToolStripMenuItem.Name" xml:space="preserve">
+    <value>openToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;TBLovePath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;FBDExplorer.Name" xml:space="preserve">
-    <value>FBDExplorer</value>
-  </data>
-  <data name="&gt;&gt;TSMIVersioning.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;löveToolStripMenuItem.Name" xml:space="preserve">
-    <value>löveToolStripMenuItem</value>
-  </data>
-  <data name="TCVariables.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 27</value>
-  </data>
-  <data name="&gt;&gt;BOpenProject.Name" xml:space="preserve">
-    <value>BOpenProject</value>
-  </data>
-  <data name="TBProjectPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 22</value>
-  </data>
-  <data name="LBVariables.Items7" xml:space="preserve">
-    <value>audio.mixwithsystem</value>
-  </data>
-  <data name="BOpenProject.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="TSMISteam.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="&gt;&gt;TVVariables.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TSMITools.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;listView1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;LOperation.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;TCVariables.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;steamToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BExecute.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;listView1.Parent" xml:space="preserve">
-    <value>TPEnvrionment</value>
-  </data>
-  <data name="&gt;&gt;projectToolStripMenuItem.Name" xml:space="preserve">
-    <value>projectToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;TPConf.Parent" xml:space="preserve">
-    <value>TCVariables</value>
-  </data>
-  <data name="&gt;&gt;TSMIProjects.Name" xml:space="preserve">
-    <value>TSMIProjects</value>
-  </data>
-  <data name="&gt;&gt;TPBuild.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="LOperation.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="&gt;&gt;RBValidRoot.Parent" xml:space="preserve">
+    <value>GBPaths</value>
   </data>
   <data name="&gt;&gt;CBOperation.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;LRequirements.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;GBConfVariables.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="&gt;&gt;BRefreshEnv.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="manifestToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="&gt;&gt;TBLovePath.Parent" xml:space="preserve">
-    <value>GBPaths</value>
-  </data>
-  <data name="radioButton1.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="TSMITools.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 20</value>
-  </data>
-  <data name="&gt;&gt;RBValidRoot.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BRefreshEnv.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;progressBar1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;CLBIncludes.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BNewProject.Parent" xml:space="preserve">
-    <value>GBPaths</value>
-  </data>
-  <data name="GBConfVariables.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="&gt;&gt;LBVariables.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BExecute.Name" xml:space="preserve">
-    <value>BExecute</value>
-  </data>
-  <data name="&gt;&gt;manifestToolStripMenuItem.Name" xml:space="preserve">
-    <value>manifestToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;toolsToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="LRequirements.Location" type="System.Drawing.Point, System.Drawing">
-    <value>381, 3</value>
-  </data>
-  <data name="TBLovePath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 51</value>
-  </data>
-  <data name="&gt;&gt;BExecute.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TPBuild.Name" xml:space="preserve">
-    <value>TPBuild</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TSMITools.Name" xml:space="preserve">
-    <value>TSMITools</value>
-  </data>
-  <data name="&gt;&gt;TPBuild.Parent" xml:space="preserve">
-    <value>TCVariables</value>
-  </data>
-  <data name="&gt;&gt;TPConf.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="LBVariables.Items14" xml:space="preserve">
-    <value>window.borderless</value>
-  </data>
-  <data name="&gt;&gt;BExecute.Parent" xml:space="preserve">
-    <value>GBControls</value>
-  </data>
-  <data name="GBControls.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="LStatus.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 11</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
-    <value>GBConfVariables</value>
-  </data>
-  <data name="&gt;&gt;TPConf.Name" xml:space="preserve">
-    <value>TPConf</value>
-  </data>
-  <data name="TPBuild.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 24</value>
-  </data>
-  <data name="progressBar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 29</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
-  </data>
-  <data name="LBVariables.Items12" xml:space="preserve">
-    <value>window.title</value>
-  </data>
-  <data name="&gt;&gt;LBVariables.Name" xml:space="preserve">
-    <value>LBVariables</value>
-  </data>
-  <data name="&gt;&gt;TSMISteam.Name" xml:space="preserve">
-    <value>TSMISteam</value>
-  </data>
-  <data name="&gt;&gt;GBPaths.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="MSToolbar.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;BOpenProject.Parent" xml:space="preserve">
-    <value>GBPaths</value>
-  </data>
-  <data name="&gt;&gt;TSMIVersioning.Name" xml:space="preserve">
-    <value>TSMIVersioning</value>
-  </data>
-  <data name="&gt;&gt;TPBuild.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;versioningToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="TPBuild.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="TPEnvrionment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
   </data>
-  <data name="&gt;&gt;TPEnvrionment.Type" xml:space="preserve">
+  <data name="TPBuildPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <data name="&gt;&gt;TSMISteam.Name" xml:space="preserve">
+    <value>TSMISteam</value>
+  </data>
+  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 100</value>
+  </data>
+  <data name="&gt;&gt;LVersion.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="TBLovePath.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainWindow</value>
+  </data>
+  <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>208, 121</value>
+  </data>
+  <data name="&gt;&gt;BRefreshEnv.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>209, 29</value>
+  </data>
+  <data name="LOperation.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="BRefreshEnv.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;BExecute.Parent" xml:space="preserve">
+    <value>GBControls</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 100</value>
+  </data>
+  <data name="&gt;&gt;TBMoonPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TPBuildPanel.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;PBOperation.Parent" xml:space="preserve">
-    <value>GBControls</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>LoveMaker</value>
   </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
-    <value>GBControls</value>
+  <data name="&gt;&gt;TBMoonPath.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="steamToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="&gt;&gt;BRefreshEnv.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;TVVariables.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TPConf.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BRefreshEnv.Name" xml:space="preserve">
+    <value>BRefreshEnv</value>
+  </data>
+  <data name="LBVariables.Items14" xml:space="preserve">
+    <value>window.borderless</value>
+  </data>
+  <data name="&gt;&gt;MSToolbar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;radioButton1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LRequirements.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LBVariables.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RBValidMoonscript.Name" xml:space="preserve">
+    <value>RBValidMoonscript</value>
+  </data>
+  <data name="RBValidMoonscript.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 84</value>
+  </data>
+  <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 179</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
+    <value>textBox1</value>
+  </data>
+  <data name="&gt;&gt;TPConf.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LVersion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>209, 11</value>
+  </data>
+  <data name="RBValidLua.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 55</value>
+  </data>
+  <data name="&gt;&gt;TSMIProjects.Name" xml:space="preserve">
+    <value>TSMIProjects</value>
+  </data>
+  <data name="&gt;&gt;TBLuaPath.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;TBProjectPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="versioningToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="&gt;&gt;GBControls.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TPEnvrionment.Parent" xml:space="preserve">
+    <value>TCVariables</value>
+  </data>
+  <data name="BNewProject.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="LBVariables.Items1" xml:space="preserve">
+    <value>version</value>
+  </data>
+  <data name="TPBuildPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;TSMIExit.Name" xml:space="preserve">
+    <value>TSMIExit</value>
+  </data>
+  <data name="&gt;&gt;TSMITools.Name" xml:space="preserve">
+    <value>TSMITools</value>
+  </data>
+  <data name="LBVariables.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="progressBar1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;TPBuildPanel.Name" xml:space="preserve">
+    <value>TPBuildPanel</value>
+  </data>
+  <data name="&gt;&gt;BOpenProject.Parent" xml:space="preserve">
+    <value>GBPaths</value>
+  </data>
+  <data name="TPEnvrionment.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;LBVariables.Parent" xml:space="preserve">
+    <value>GBConfVariables</value>
+  </data>
+  <data name="&gt;&gt;exitToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;TSMILove.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <metadata name="FBDExplorer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>128, 17</value>
-  </metadata>
-  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="&gt;&gt;GBConfVariables.Parent" xml:space="preserve">
+    <value>TPConf</value>
+  </data>
+  <data name="listView1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;listView1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RBValidLua.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;TBProjectPath.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;TBRuntimeLog.Parent" xml:space="preserve">
+    <value>GBRuntime</value>
+  </data>
+  <data name="RBValidMoonscript.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;TPEnvrionment.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;manifestToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TSMITools.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="generateToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="&gt;&gt;TSMIVersioning.Name" xml:space="preserve">
+    <value>TSMIVersioning</value>
+  </data>
+  <data name="gitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="&gt;&gt;radioButton1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TPBuildPanel.Parent" xml:space="preserve">
+    <value>TCVariables</value>
+  </data>
+  <data name="&gt;&gt;progressBar1.Parent" xml:space="preserve">
+    <value>GBConfVariables</value>
+  </data>
+  <data name="&gt;&gt;LVersion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MSToolbar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="TBLuaPath.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="manifestToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="&gt;&gt;TPBuild.Parent" xml:space="preserve">
+    <value>TCVariables</value>
+  </data>
+  <data name="&gt;&gt;TBMoonPath.Name" xml:space="preserve">
+    <value>TBMoonPath</value>
+  </data>
+  <data name="LBVariables.Items5" xml:space="preserve">
+    <value>gammacorrect</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;generateToolStripMenuItem.Name" xml:space="preserve">
+    <value>generateToolStripMenuItem</value>
+  </data>
+  <data name="TSMIExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 20</value>
+  </data>
+  <data name="&gt;&gt;TBVersion.Parent" xml:space="preserve">
+    <value>GBControls</value>
+  </data>
+  <data name="&gt;&gt;LOperation.Parent" xml:space="preserve">
+    <value>GBControls</value>
+  </data>
+  <data name="&gt;&gt;TCVariables.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;TBLovePath.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="TBMoonPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 80</value>
+  </data>
+  <data name="&gt;&gt;BNewProject.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="progressBar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 29</value>
+  </data>
+  <data name="&gt;&gt;LRequirements.Name" xml:space="preserve">
+    <value>LRequirements</value>
+  </data>
+  <data name="TSMILove.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="CLBIncludes.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;CBOperation.Name" xml:space="preserve">
+    <value>CBOperation</value>
+  </data>
+  <data name="radioButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 26</value>
+  </data>
+  <data name="&gt;&gt;LBVariables.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="TCVariables.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;LVersion.Parent" xml:space="preserve">
+    <value>GBControls</value>
+  </data>
+  <data name="TSMIProjects.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 20</value>
+  </data>
+  <data name="löveToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="BRefreshEnv.Location" type="System.Drawing.Point, System.Drawing">
+    <value>224, 205</value>
+  </data>
+  <data name="CBOperation.Items" xml:space="preserve">
+    <value>Custom Operation</value>
+  </data>
+  <data name="&gt;&gt;MSToolbar.Name" xml:space="preserve">
+    <value>MSToolbar</value>
+  </data>
+  <data name="LBVariables.Items6" xml:space="preserve">
+    <value>accelerometerjoystick</value>
+  </data>
+  <data name="&gt;&gt;RBValidLua.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LBVariables.Items10" xml:space="preserve">
+    <value>window.x</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
@@ -2522,7 +2648,7 @@
   <metadata name="MSToolbar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
+  <metadata name="FBDExplorer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>128, 17</value>
   </metadata>
 </root>
