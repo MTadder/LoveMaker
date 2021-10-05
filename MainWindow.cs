@@ -1,5 +1,8 @@
 ﻿using System;
+using System.IO;
 using System.Windows.Forms;
+
+using MTLibrary;
 
 namespace LoveMaker {
     public partial class MainWindow : Form {
@@ -22,30 +25,40 @@ namespace LoveMaker {
             }
             this.LogCase(true, "action: " + purpose);
         }
-
-        LoveHelper Helper = new();
+        private Boolean Check() {
+            if (this.TBLuaPath.Text != String.Empty) {
+                this.RBValidLua.Checked = File.Exists(this.TBLuaPath.Text);
+            }
+            if (this.TBMoonPath.Text != String.Empty) {
+                this.RBValidMoonscript.Checked = File.Exists(this.TBMoonPath.Text);
+            }
+            return this.RBValidLua.Checked && this.RBValidMoonscript.Checked;
+        }
+        public DictionaryFile Settings;
+        public LoveHelper Helper;
         public MainWindow() {
             InitializeComponent();
 
-            // Hook the Helper.Updated Action
-            this.Helper.Callbacks.Update = () => {
-                this.RBValidRoot.Checked = Helper.Flags.IsValid;
-                this.LogCase(Helper.Flags.IsValid, "Helper");
-            };
-            // Hook the Helper.PBStatus ProgressBar to the one in the form
-            this.Helper.Flags.PBStatus = this.PBOperation;
+            this.Settings = new("setttings.bin");
+            this.Helper = new(true);
         }
 
         private void MainWindow_Load(Object sender, EventArgs e) {
-            // Check if the CurrentDirectory is a Valid LÖVE game
-            String ENVPath = Environment.CurrentDirectory;
-            if (FilesystemLover.IsValidLoveDirectory(ENVPath)) {
-                this.Helper.Setup(ENVPath);
+            this.TBProjectPath.Text = Environment.CurrentDirectory;
+            this.TBLuaPath.Text = this.Settings.Get("luac");
+            this.TBMoonPath.Text = this.Settings.Get("moonc");
+            if (!this.Check()) {
+                this.TBLuaPath.Text = this.Helper.GetKeyfile("luac.exe");
+                this.TBMoonPath.Text = this.Helper.GetKeyfile("moonc.exe");
+                if (this.Check()) {
+                    this.Settings.Set("luac", this.TBLuaPath.Text);
+                    this.Settings.Set("moonc", this.TBMoonPath.Text);
+                }
             }
         }
 
         private void BExecute_Click(Object sender, EventArgs e) {
-            if (this.Helper.Flags.IsValid) {
+            if (true) { //this.Helper.Flags.IsValid
                 switch (this.CBOperation.Text) {
                     case "":
                         String title = "Cannot Execute";
@@ -75,7 +88,7 @@ namespace LoveMaker {
         private void BOpenProject_Click(Object sender, EventArgs e) {
             _= this.FBDExplorer.ShowDialog();
             this.TBProjectPath.Text = this.FBDExplorer.SelectedPath;
-            this.Helper.Setup(this.FBDExplorer.SelectedPath);
+            //this.Helper.Setup(this.FBDExplorer.SelectedPath);
         }
 
         private void BRefreshEnv_Click(Object sender, EventArgs e) {
@@ -83,6 +96,10 @@ namespace LoveMaker {
             this.TBProjectPath.Text = String.Empty;
             this.TBLuaPath.Text = String.Empty;
             this.TBMoonPath.Text = String.Empty;
+        }
+
+        private void MainWindow_FormClosing(Object sender, FormClosingEventArgs e) {
+            this.Settings.Save();
         }
     }
 }

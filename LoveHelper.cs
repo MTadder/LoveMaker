@@ -1,56 +1,72 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
-using System.Windows.Forms;
 
 namespace LoveMaker {
     public class LoveHelper {
-        public struct CallbackBank {
-            public Action Update;
-            public Action PreExecute;
-            public Action PostExecute;
+        private static readonly String[] _keyPaths = {
+            @"moonscript\", @"Moonscript\",
+            @"love\", @"LOVE\",
+            @"mingw\bin\", @"MinGW\bin\",
         };
 
-        // public (Action Update, Action Pre, Action Post) Callbacks;
+        private static readonly String[] _keyFiles = {
+            "moonc.exe", "moon.exe",
+            "lovec.exe", "love.exe",
+            "luac.exe", "lua.exe",
+        };
 
-        public struct FlagBank {
-            public String ProjectPath;
-            public String LuaPath;
-            public String MoonPath;
-            public Boolean IsValid;
-            public ProgressBar PBStatus;
-            // public Dictionary<String, String> Variables;
-        }
-
-        public CallbackBank Callbacks;
-        public FlagBank Flags;
-
-        private Dictionary<String, Dictionary<Action, Boolean>> Registry = new();
-        public void Register(String stepName, Action operation) {
-            if (this.Registry.ContainsKey(stepName)) {
-                this.Registry[stepName].Add(operation, false);
-            } else {
-                Dictionary<Action, Boolean> reg = new();
-                (reg[operation], this.Registry[stepName])
-                    = (false, reg);
+        private void RemoveDuplicates() {
+            String last = String.Empty;
+            foreach (String item in this._keys) {
+                if (item.Equals(last, StringComparison.OrdinalIgnoreCase)) {
+                    _ = this._keys.Remove(item);
+                }
             }
         }
 
-        [Obsolete("Use Register to query a registry setup")]
-        public void Setup(String path) {
-            if (FilesystemLover.IsValidLoveDirectory(path)) {
-                (this.Flags.ProjectPath, this.Flags.IsValid)
-                    = (path, true);
-                this.Flags.PBStatus.Value += 5;
-            } else {
-                (this.Flags.IsValid, this.Flags.PBStatus.Value)
-                    = (false, 0);
+        private HashSet<String> _keys;
 
-                String msg = "The selected directory is not a valid LÖVE2D game.\n" +
-                    "Missing: '" + path + @"\" + "main.[lua | moon]'!";
-                String title = "Notice";
-                _= MessageBox.Show(msg, title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        public LoveHelper(Boolean autosearch = false) {
+            this._keys = new();
+            if (autosearch is true) {
+                this.Search("C:");
+                this.Search(Environment.CurrentDirectory);
+                var specialFolders = (Environment.SpecialFolder[]) Enum.GetValues(typeof(Environment.SpecialFolder));
+                foreach (var spFolder in specialFolders) {
+                    String gotPath = Environment.GetFolderPath(spFolder, Environment.SpecialFolderOption.DoNotVerify);
+                    if (gotPath != String.Empty) {
+                        this.Search(gotPath);
+                    }
+                }
             }
-            this.Callbacks.Update.Invoke();
+        }
+
+        public String GetKeyfile(String key) {
+            foreach (String keyFilename in _keyFiles) {
+                if (keyFilename.Equals(key)) {
+                    var keyExplorer = this._keys.GetEnumerator();
+                    while (keyExplorer.MoveNext()) {
+                        if (keyExplorer.Current.Contains(keyFilename))
+                            return keyExplorer.Current;
+                    }
+                }
+            } return String.Empty;
+        }
+
+        public void Search(String path) {
+            if (Directory.Exists(path)) {
+                foreach (String candidateDirName in _keyPaths) {
+                    String candidatePath = path + @"\" + candidateDirName;
+                    if (Directory.Exists(candidatePath))
+                        foreach (String candidateFilename in _keyFiles) {
+                            String candidateFilePath = candidatePath + candidateFilename;
+                            if (File.Exists(candidateFilePath))
+                                _ = this._keys.Add(candidateFilePath);
+                        }
+                }
+            }
+            this.RemoveDuplicates();
         }
     }
 }

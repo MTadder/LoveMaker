@@ -345,6 +345,7 @@ namespace LoveMaker
             this.Controls.Add(this.MSToolbar);
             this.MainMenuStrip = this.MSToolbar;
             this.Name = "MainWindow";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainWindow_FormClosing);
             this.Load += new System.EventHandler(this.MainWindow_Load);
             this.TCVariables.ResumeLayout(false);
             this.TPEnvrionment.ResumeLayout(false);

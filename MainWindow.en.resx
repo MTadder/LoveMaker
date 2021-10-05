@@ -61,55 +61,11 @@
   <data name="TCVariables.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="TPEnvrionment.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="TPEnvrionment.Size" type="System.Drawing.Size, System.Drawing">
-    <value>582, 393</value>
-  </data>
-  <data name="TPEnvrionment.Text" xml:space="preserve">
-    <value>Environment</value>
-  </data>
-  <data name="TPConf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>582, 393</value>
-  </data>
-  <data name="TPConf.Text" xml:space="preserve">
-    <value>Configuration</value>
-  </data>
-  <data name="TPBuild.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="TPBuild.Size" type="System.Drawing.Size, System.Drawing">
-    <value>582, 393</value>
-  </data>
-  <data name="TPBuild.Text" xml:space="preserve">
-    <value>Build</value>
-  </data>
-  <data name="TCVariables.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 27</value>
-  </data>
-  <data name="TCVariables.Size" type="System.Drawing.Size, System.Drawing">
-    <value>590, 421</value>
-  </data>
   <data name="GBPaths.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="GBPaths.Size" type="System.Drawing.Size, System.Drawing">
-    <value>570, 381</value>
-  </data>
-  <data name="GBPaths.Text" xml:space="preserve">
-    <value>Overview</value>
-  </data>
   <data name="GBRuntime.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="GBRuntime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>558, 235</value>
-  </data>
-  <data name="GBRuntime.Text" xml:space="preserve">
-    <value>Log</value>
   </data>
   <data name="TBRuntimeLog.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -121,8 +77,15 @@
   <data name="TBRuntimeLog.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
     <value>Vertical</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="TBRuntimeLog.Size" type="System.Drawing.Size, System.Drawing">
     <value>546, 207</value>
+  </data>
+  <data name="GBRuntime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>558, 235</value>
+  </data>
+  <data name="GBRuntime.Text" xml:space="preserve">
+    <value>Log</value>
   </data>
   <data name="TBMoonPath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -202,11 +165,21 @@
   <data name="TBProjectPath.Size" type="System.Drawing.Size, System.Drawing">
     <value>538, 23</value>
   </data>
-  <data name="GBConfVariables.Size" type="System.Drawing.Size, System.Drawing">
-    <value>308, 256</value>
+  <data name="GBPaths.Size" type="System.Drawing.Size, System.Drawing">
+    <value>570, 381</value>
   </data>
-  <data name="GBConfVariables.Text" xml:space="preserve">
-    <value>Variables</value>
+  <data name="GBPaths.Text" xml:space="preserve">
+    <value>Overview</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="TPEnvrionment.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="TPEnvrionment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>582, 393</value>
+  </data>
+  <data name="TPEnvrionment.Text" xml:space="preserve">
+    <value>Environment</value>
   </data>
   <data name="TVVariables.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -214,14 +187,17 @@
   <data name="TVVariables.Size" type="System.Drawing.Size, System.Drawing">
     <value>296, 228</value>
   </data>
-  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
+  <data name="GBConfVariables.Size" type="System.Drawing.Size, System.Drawing">
+    <value>308, 256</value>
   </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>345, 250</value>
+  <data name="GBConfVariables.Text" xml:space="preserve">
+    <value>Variables</value>
   </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Binary Requirements</value>
+  <data name="TPConf.Size" type="System.Drawing.Size, System.Drawing">
+    <value>582, 393</value>
+  </data>
+  <data name="TPConf.Text" xml:space="preserve">
+    <value>Configuration</value>
   </data>
   <data name="CLBIncludes.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -232,20 +208,29 @@
   <data name="CLBIncludes.Size" type="System.Drawing.Size, System.Drawing">
     <value>333, 220</value>
   </data>
-  <data name="MSToolbar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>614, 24</value>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
   </data>
-  <data name="MSToolbar.Text" xml:space="preserve">
-    <value>menuStrip1</value>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>345, 250</value>
   </data>
-  <data name="TSMIProjects.Text" xml:space="preserve">
-    <value>Project</value>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Binary Requirements</value>
   </data>
-  <data name="generateToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 22</value>
+  <data name="TPBuild.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
   </data>
-  <data name="generateToolStripMenuItem.Text" xml:space="preserve">
-    <value>Generate...</value>
+  <data name="TPBuild.Size" type="System.Drawing.Size, System.Drawing">
+    <value>582, 393</value>
+  </data>
+  <data name="TPBuild.Text" xml:space="preserve">
+    <value>Build</value>
+  </data>
+  <data name="TCVariables.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 27</value>
+  </data>
+  <data name="TCVariables.Size" type="System.Drawing.Size, System.Drawing">
+    <value>590, 421</value>
   </data>
   <data name="manifestToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 22</value>
@@ -253,8 +238,14 @@
   <data name="manifestToolStripMenuItem.Text" xml:space="preserve">
     <value>Manifest</value>
   </data>
-  <data name="TSMITools.Text" xml:space="preserve">
-    <value>Tools</value>
+  <data name="generateToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 22</value>
+  </data>
+  <data name="generateToolStripMenuItem.Text" xml:space="preserve">
+    <value>Generate...</value>
+  </data>
+  <data name="TSMIProjects.Text" xml:space="preserve">
+    <value>Project</value>
   </data>
   <data name="TSMILove.Size" type="System.Drawing.Size, System.Drawing">
     <value>129, 22</value>
@@ -274,17 +265,20 @@
   <data name="TSMISteam.Text" xml:space="preserve">
     <value>Steam</value>
   </data>
+  <data name="TSMITools.Text" xml:space="preserve">
+    <value>Tools</value>
+  </data>
   <data name="TSMIExit.Text" xml:space="preserve">
     <value>Exit</value>
   </data>
+  <data name="MSToolbar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>614, 24</value>
+  </data>
+  <data name="MSToolbar.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
   <data name="GBControls.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left, Right</value>
-  </data>
-  <data name="GBControls.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 454</value>
-  </data>
-  <data name="GBControls.Size" type="System.Drawing.Size, System.Drawing">
-    <value>586, 62</value>
   </data>
   <data name="LOperation.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
@@ -360,6 +354,12 @@
   </data>
   <data name="BExecute.Text" xml:space="preserve">
     <value>Start</value>
+  </data>
+  <data name="GBControls.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 454</value>
+  </data>
+  <data name="GBControls.Size" type="System.Drawing.Size, System.Drawing">
+    <value>586, 62</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>614, 528</value>
