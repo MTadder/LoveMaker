@@ -7,13 +7,18 @@ namespace LoveMaker {
         private static readonly String[] _keyPaths = {
             @"moonscript\", @"Moonscript\",
             @"love\", @"LOVE\",
-            @"mingw\bin\", @"MinGW\bin\",
+            @"mingw\bin\", @"MinGW\bin\"
         };
 
         private static readonly String[] _keyFiles = {
             "moonc.exe", "moon.exe",
             "lovec.exe", "love.exe",
-            "luac.exe", "lua.exe",
+            "luac.exe", "lua.exe"
+        };
+
+        private static readonly String[] _keyLoveFiles = {
+            "main.lua", "conf.lua",
+            "main.moon", "conf.moon"
         };
 
         private void RemoveDuplicates() {
@@ -67,6 +72,16 @@ namespace LoveMaker {
                 }
             }
             this.RemoveDuplicates();
+        }
+
+        public static Boolean IsLoveDirectory(String path) {
+            if (Directory.Exists(path)) {
+                foreach (String keyLoveFilename in _keyLoveFiles) {
+                    if (File.Exists(path+@"\"+keyLoveFilename)) {
+                        return true;
+                    }
+                }
+            } return false;
         }
     }
 }

@@ -33,37 +33,32 @@ namespace LoveMaker
             this.TCVariables = new System.Windows.Forms.TabControl();
             this.TPEnvrionment = new System.Windows.Forms.TabPage();
             this.GBPaths = new System.Windows.Forms.GroupBox();
+            this.CBValidMoon = new System.Windows.Forms.CheckBox();
+            this.CBValidLua = new System.Windows.Forms.CheckBox();
+            this.CBValidRoot = new System.Windows.Forms.CheckBox();
             this.GBRuntime = new System.Windows.Forms.GroupBox();
             this.TBRuntimeLog = new System.Windows.Forms.TextBox();
             this.TBMoonPath = new System.Windows.Forms.TextBox();
             this.TBLuaPath = new System.Windows.Forms.TextBox();
-            this.RBValidMoonscript = new System.Windows.Forms.RadioButton();
-            this.RBValidLua = new System.Windows.Forms.RadioButton();
-            this.RBValidRoot = new System.Windows.Forms.RadioButton();
-            this.BOpenProject = new System.Windows.Forms.Button();
             this.BRefreshEnv = new System.Windows.Forms.Button();
             this.TBProjectPath = new System.Windows.Forms.TextBox();
-            this.TPConf = new System.Windows.Forms.TabPage();
-            this.GBConfVariables = new System.Windows.Forms.GroupBox();
-            this.TVVariables = new System.Windows.Forms.TreeView();
-            this.TPBuild = new System.Windows.Forms.TabPage();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.CLBIncludes = new System.Windows.Forms.CheckedListBox();
             this.MSToolbar = new System.Windows.Forms.MenuStrip();
             this.TSMIProjects = new System.Windows.Forms.ToolStripMenuItem();
-            this.generateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.manifestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMITools = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMILove = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMIVersioning = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMISteam = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMINewProject = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSSProject = new System.Windows.Forms.ToolStripSeparator();
+            this.TSMIGenerate = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMIGenCodeAnalysis = new System.Windows.Forms.ToolStripMenuItem();
+            this.mD5HashToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMISettings = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMIEditSettings = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSSSettings = new System.Windows.Forms.ToolStripSeparator();
+            this.TSMISaveSettings = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMILoadSettings = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMIExit = new System.Windows.Forms.ToolStripMenuItem();
             this.GBControls = new System.Windows.Forms.GroupBox();
             this.LOperation = new System.Windows.Forms.Label();
             this.TBVersion = new System.Windows.Forms.TextBox();
             this.LVersion = new System.Windows.Forms.Label();
-            this.LStatus = new System.Windows.Forms.Label();
-            this.PBOperation = new System.Windows.Forms.ProgressBar();
             this.CBOperation = new System.Windows.Forms.ComboBox();
             this.BExecute = new System.Windows.Forms.Button();
             this.FBDExplorer = new System.Windows.Forms.FolderBrowserDialog();
@@ -71,10 +66,6 @@ namespace LoveMaker
             this.TPEnvrionment.SuspendLayout();
             this.GBPaths.SuspendLayout();
             this.GBRuntime.SuspendLayout();
-            this.TPConf.SuspendLayout();
-            this.GBConfVariables.SuspendLayout();
-            this.TPBuild.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.MSToolbar.SuspendLayout();
             this.GBControls.SuspendLayout();
             this.SuspendLayout();
@@ -83,8 +74,6 @@ namespace LoveMaker
             // 
             resources.ApplyResources(this.TCVariables, "TCVariables");
             this.TCVariables.Controls.Add(this.TPEnvrionment);
-            this.TCVariables.Controls.Add(this.TPConf);
-            this.TCVariables.Controls.Add(this.TPBuild);
             this.TCVariables.Name = "TCVariables";
             this.TCVariables.SelectedIndex = 0;
             // 
@@ -98,17 +87,35 @@ namespace LoveMaker
             // GBPaths
             // 
             resources.ApplyResources(this.GBPaths, "GBPaths");
+            this.GBPaths.Controls.Add(this.CBValidMoon);
+            this.GBPaths.Controls.Add(this.CBValidLua);
+            this.GBPaths.Controls.Add(this.CBValidRoot);
             this.GBPaths.Controls.Add(this.GBRuntime);
             this.GBPaths.Controls.Add(this.TBMoonPath);
             this.GBPaths.Controls.Add(this.TBLuaPath);
-            this.GBPaths.Controls.Add(this.RBValidMoonscript);
-            this.GBPaths.Controls.Add(this.RBValidLua);
-            this.GBPaths.Controls.Add(this.RBValidRoot);
-            this.GBPaths.Controls.Add(this.BOpenProject);
             this.GBPaths.Controls.Add(this.BRefreshEnv);
             this.GBPaths.Controls.Add(this.TBProjectPath);
             this.GBPaths.Name = "GBPaths";
             this.GBPaths.TabStop = false;
+            // 
+            // CBValidMoon
+            // 
+            resources.ApplyResources(this.CBValidMoon, "CBValidMoon");
+            this.CBValidMoon.Name = "CBValidMoon";
+            this.CBValidMoon.UseVisualStyleBackColor = true;
+            // 
+            // CBValidLua
+            // 
+            resources.ApplyResources(this.CBValidLua, "CBValidLua");
+            this.CBValidLua.Name = "CBValidLua";
+            this.CBValidLua.UseVisualStyleBackColor = true;
+            // 
+            // CBValidRoot
+            // 
+            resources.ApplyResources(this.CBValidRoot, "CBValidRoot");
+            this.CBValidRoot.Name = "CBValidRoot";
+            this.CBValidRoot.UseVisualStyleBackColor = true;
+            this.CBValidRoot.CheckedChanged += new System.EventHandler(this.CBValidRoot_CheckedChanged);
             // 
             // GBRuntime
             // 
@@ -127,41 +134,13 @@ namespace LoveMaker
             // 
             resources.ApplyResources(this.TBMoonPath, "TBMoonPath");
             this.TBMoonPath.Name = "TBMoonPath";
-            this.TBMoonPath.ReadOnly = true;
+            this.TBMoonPath.TextChanged += new System.EventHandler(this.TBMoonPath_TextChanged);
             // 
             // TBLuaPath
             // 
             resources.ApplyResources(this.TBLuaPath, "TBLuaPath");
             this.TBLuaPath.Name = "TBLuaPath";
-            this.TBLuaPath.ReadOnly = true;
-            // 
-            // RBValidMoonscript
-            // 
-            resources.ApplyResources(this.RBValidMoonscript, "RBValidMoonscript");
-            this.RBValidMoonscript.Name = "RBValidMoonscript";
-            this.RBValidMoonscript.TabStop = true;
-            this.RBValidMoonscript.UseVisualStyleBackColor = true;
-            // 
-            // RBValidLua
-            // 
-            resources.ApplyResources(this.RBValidLua, "RBValidLua");
-            this.RBValidLua.Name = "RBValidLua";
-            this.RBValidLua.TabStop = true;
-            this.RBValidLua.UseVisualStyleBackColor = true;
-            // 
-            // RBValidRoot
-            // 
-            resources.ApplyResources(this.RBValidRoot, "RBValidRoot");
-            this.RBValidRoot.Name = "RBValidRoot";
-            this.RBValidRoot.TabStop = true;
-            this.RBValidRoot.UseVisualStyleBackColor = true;
-            // 
-            // BOpenProject
-            // 
-            resources.ApplyResources(this.BOpenProject, "BOpenProject");
-            this.BOpenProject.Name = "BOpenProject";
-            this.BOpenProject.UseVisualStyleBackColor = true;
-            this.BOpenProject.Click += new System.EventHandler(this.BOpenProject_Click);
+            this.TBLuaPath.TextChanged += new System.EventHandler(this.TBLuaPath_TextChanged);
             // 
             // BRefreshEnv
             // 
@@ -174,53 +153,14 @@ namespace LoveMaker
             // 
             resources.ApplyResources(this.TBProjectPath, "TBProjectPath");
             this.TBProjectPath.Name = "TBProjectPath";
-            this.TBProjectPath.ReadOnly = true;
-            // 
-            // TPConf
-            // 
-            resources.ApplyResources(this.TPConf, "TPConf");
-            this.TPConf.Controls.Add(this.GBConfVariables);
-            this.TPConf.Name = "TPConf";
-            this.TPConf.UseVisualStyleBackColor = true;
-            // 
-            // GBConfVariables
-            // 
-            resources.ApplyResources(this.GBConfVariables, "GBConfVariables");
-            this.GBConfVariables.Controls.Add(this.TVVariables);
-            this.GBConfVariables.Name = "GBConfVariables";
-            this.GBConfVariables.TabStop = false;
-            // 
-            // TVVariables
-            // 
-            resources.ApplyResources(this.TVVariables, "TVVariables");
-            this.TVVariables.Name = "TVVariables";
-            // 
-            // TPBuild
-            // 
-            resources.ApplyResources(this.TPBuild, "TPBuild");
-            this.TPBuild.Controls.Add(this.groupBox1);
-            this.TPBuild.Name = "TPBuild";
-            this.TPBuild.UseVisualStyleBackColor = true;
-            // 
-            // groupBox1
-            // 
-            resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.Controls.Add(this.CLBIncludes);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.TabStop = false;
-            // 
-            // CLBIncludes
-            // 
-            resources.ApplyResources(this.CLBIncludes, "CLBIncludes");
-            this.CLBIncludes.FormattingEnabled = true;
-            this.CLBIncludes.Name = "CLBIncludes";
+            this.TBProjectPath.TextChanged += new System.EventHandler(this.TBProjectPath_TextChanged);
             // 
             // MSToolbar
             // 
             resources.ApplyResources(this.MSToolbar, "MSToolbar");
             this.MSToolbar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSMIProjects,
-            this.TSMITools,
+            this.TSMISettings,
             this.TSMIExit});
             this.MSToolbar.Name = "MSToolbar";
             // 
@@ -228,44 +168,69 @@ namespace LoveMaker
             // 
             resources.ApplyResources(this.TSMIProjects, "TSMIProjects");
             this.TSMIProjects.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.generateToolStripMenuItem});
+            this.TSMINewProject,
+            this.TSSProject,
+            this.TSMIGenerate});
             this.TSMIProjects.Name = "TSMIProjects";
             // 
-            // generateToolStripMenuItem
+            // TSMINewProject
             // 
-            resources.ApplyResources(this.generateToolStripMenuItem, "generateToolStripMenuItem");
-            this.generateToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.manifestToolStripMenuItem});
-            this.generateToolStripMenuItem.Name = "generateToolStripMenuItem";
+            resources.ApplyResources(this.TSMINewProject, "TSMINewProject");
+            this.TSMINewProject.Name = "TSMINewProject";
+            this.TSMINewProject.Click += new System.EventHandler(this.TSMINewProject_Click);
             // 
-            // manifestToolStripMenuItem
+            // TSSProject
             // 
-            resources.ApplyResources(this.manifestToolStripMenuItem, "manifestToolStripMenuItem");
-            this.manifestToolStripMenuItem.Name = "manifestToolStripMenuItem";
+            resources.ApplyResources(this.TSSProject, "TSSProject");
+            this.TSSProject.Name = "TSSProject";
             // 
-            // TSMITools
+            // TSMIGenerate
             // 
-            resources.ApplyResources(this.TSMITools, "TSMITools");
-            this.TSMITools.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TSMILove,
-            this.TSMIVersioning,
-            this.TSMISteam});
-            this.TSMITools.Name = "TSMITools";
+            resources.ApplyResources(this.TSMIGenerate, "TSMIGenerate");
+            this.TSMIGenerate.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSMIGenCodeAnalysis,
+            this.mD5HashToolStripMenuItem});
+            this.TSMIGenerate.Name = "TSMIGenerate";
             // 
-            // TSMILove
+            // TSMIGenCodeAnalysis
             // 
-            resources.ApplyResources(this.TSMILove, "TSMILove");
-            this.TSMILove.Name = "TSMILove";
+            resources.ApplyResources(this.TSMIGenCodeAnalysis, "TSMIGenCodeAnalysis");
+            this.TSMIGenCodeAnalysis.Name = "TSMIGenCodeAnalysis";
             // 
-            // TSMIVersioning
+            // mD5HashToolStripMenuItem
             // 
-            resources.ApplyResources(this.TSMIVersioning, "TSMIVersioning");
-            this.TSMIVersioning.Name = "TSMIVersioning";
+            resources.ApplyResources(this.mD5HashToolStripMenuItem, "mD5HashToolStripMenuItem");
+            this.mD5HashToolStripMenuItem.Name = "mD5HashToolStripMenuItem";
             // 
-            // TSMISteam
+            // TSMISettings
             // 
-            resources.ApplyResources(this.TSMISteam, "TSMISteam");
-            this.TSMISteam.Name = "TSMISteam";
+            resources.ApplyResources(this.TSMISettings, "TSMISettings");
+            this.TSMISettings.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSMIEditSettings,
+            this.TSSSettings,
+            this.TSMISaveSettings,
+            this.TSMILoadSettings});
+            this.TSMISettings.Name = "TSMISettings";
+            // 
+            // TSMIEditSettings
+            // 
+            resources.ApplyResources(this.TSMIEditSettings, "TSMIEditSettings");
+            this.TSMIEditSettings.Name = "TSMIEditSettings";
+            // 
+            // TSSSettings
+            // 
+            resources.ApplyResources(this.TSSSettings, "TSSSettings");
+            this.TSSSettings.Name = "TSSSettings";
+            // 
+            // TSMISaveSettings
+            // 
+            resources.ApplyResources(this.TSMISaveSettings, "TSMISaveSettings");
+            this.TSMISaveSettings.Name = "TSMISaveSettings";
+            // 
+            // TSMILoadSettings
+            // 
+            resources.ApplyResources(this.TSMILoadSettings, "TSMILoadSettings");
+            this.TSMILoadSettings.Name = "TSMILoadSettings";
             // 
             // TSMIExit
             // 
@@ -279,8 +244,6 @@ namespace LoveMaker
             this.GBControls.Controls.Add(this.LOperation);
             this.GBControls.Controls.Add(this.TBVersion);
             this.GBControls.Controls.Add(this.LVersion);
-            this.GBControls.Controls.Add(this.LStatus);
-            this.GBControls.Controls.Add(this.PBOperation);
             this.GBControls.Controls.Add(this.CBOperation);
             this.GBControls.Controls.Add(this.BExecute);
             this.GBControls.Name = "GBControls";
@@ -300,17 +263,6 @@ namespace LoveMaker
             // 
             resources.ApplyResources(this.LVersion, "LVersion");
             this.LVersion.Name = "LVersion";
-            // 
-            // LStatus
-            // 
-            resources.ApplyResources(this.LStatus, "LStatus");
-            this.LStatus.Name = "LStatus";
-            // 
-            // PBOperation
-            // 
-            resources.ApplyResources(this.PBOperation, "PBOperation");
-            this.PBOperation.Name = "PBOperation";
-            this.PBOperation.Step = 5;
             // 
             // CBOperation
             // 
@@ -353,10 +305,6 @@ namespace LoveMaker
             this.GBPaths.PerformLayout();
             this.GBRuntime.ResumeLayout(false);
             this.GBRuntime.PerformLayout();
-            this.TPConf.ResumeLayout(false);
-            this.GBConfVariables.ResumeLayout(false);
-            this.TPBuild.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
             this.MSToolbar.ResumeLayout(false);
             this.MSToolbar.PerformLayout();
             this.GBControls.ResumeLayout(false);
@@ -370,41 +318,36 @@ namespace LoveMaker
 
         private System.Windows.Forms.TabControl TCVariables;
         private System.Windows.Forms.TabPage TPEnvrionment;
-        private System.Windows.Forms.TabPage TPBuild;
         private System.Windows.Forms.MenuStrip MSToolbar;
         private System.Windows.Forms.ToolStripMenuItem TSMIProjects;
-        private System.Windows.Forms.ToolStripMenuItem generateToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem manifestToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem TSMITools;
-        private System.Windows.Forms.ToolStripMenuItem TSMILove;
-        private System.Windows.Forms.ToolStripMenuItem TSMIVersioning;
-        private System.Windows.Forms.ToolStripMenuItem TSMISteam;
+        private System.Windows.Forms.ToolStripMenuItem TSMIGenerate;
         private System.Windows.Forms.ToolStripMenuItem TSMIExit;
         private System.Windows.Forms.GroupBox GBControls;
         private System.Windows.Forms.ComboBox CBOperation;
         private System.Windows.Forms.Button BExecute;
         private System.Windows.Forms.Label LVersion;
-        private System.Windows.Forms.Label LStatus;
-        private System.Windows.Forms.ProgressBar PBOperation;
         private System.Windows.Forms.TextBox TBVersion;
         private System.Windows.Forms.Label LOperation;
-        private System.Windows.Forms.TabPage TPConf;
         private System.Windows.Forms.GroupBox GBPaths;
         private System.Windows.Forms.TextBox TBProjectPath;
-        private System.Windows.Forms.Button BOpenProject;
         private System.Windows.Forms.Button BRefreshEnv;
-        private System.Windows.Forms.GroupBox GBConfVariables;
         private System.Windows.Forms.FolderBrowserDialog FBDExplorer;
-        private System.Windows.Forms.RadioButton RBValidRoot;
-        private System.Windows.Forms.TreeView TVVariables;
-        private System.Windows.Forms.CheckedListBox CLBIncludes;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox TBMoonPath;
         private System.Windows.Forms.TextBox TBLuaPath;
-        private System.Windows.Forms.RadioButton RBValidMoonscript;
-        private System.Windows.Forms.RadioButton RBValidLua;
         private System.Windows.Forms.GroupBox GBRuntime;
         private System.Windows.Forms.TextBox TBRuntimeLog;
+        private System.Windows.Forms.CheckBox CBValidRoot;
+        private System.Windows.Forms.CheckBox CBValidLua;
+        private System.Windows.Forms.CheckBox CBValidMoon;
+        private System.Windows.Forms.ToolStripMenuItem TSMIGenCodeAnalysis;
+        private System.Windows.Forms.ToolStripMenuItem TSMISettings;
+        private System.Windows.Forms.ToolStripMenuItem TSMIEditSettings;
+        private System.Windows.Forms.ToolStripMenuItem TSMINewProject;
+        private System.Windows.Forms.ToolStripSeparator TSSProject;
+        private System.Windows.Forms.ToolStripMenuItem mD5HashToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator TSSSettings;
+        private System.Windows.Forms.ToolStripMenuItem TSMISaveSettings;
+        private System.Windows.Forms.ToolStripMenuItem TSMILoadSettings;
     }
 }
 

@@ -64,25 +64,52 @@
   <data name="GBPaths.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="CBValidMoon.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CBValidMoon.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="CBValidMoon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="CBValidLua.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CBValidLua.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CBValidLua.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="CBValidRoot.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CBValidRoot.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CBValidRoot.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
   <data name="GBRuntime.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="TBRuntimeLog.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="TBRuntimeLog.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="TBRuntimeLog.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
     <value>Vertical</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="TBRuntimeLog.Size" type="System.Drawing.Size, System.Drawing">
-    <value>546, 207</value>
+    <value>546, 240</value>
   </data>
   <data name="GBRuntime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>558, 235</value>
+    <value>558, 268</value>
   </data>
   <data name="GBRuntime.Text" xml:space="preserve">
     <value>Log</value>
@@ -105,50 +132,11 @@
   <data name="TBLuaPath.Size" type="System.Drawing.Size, System.Drawing">
     <value>538, 23</value>
   </data>
-  <data name="RBValidMoonscript.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="RBValidMoonscript.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="RBValidMoonscript.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="RBValidMoonscript.Size" type="System.Drawing.Size, System.Drawing">
-    <value>14, 13</value>
-  </data>
-  <data name="RBValidLua.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="RBValidLua.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="RBValidLua.Size" type="System.Drawing.Size, System.Drawing">
-    <value>14, 13</value>
-  </data>
-  <data name="RBValidRoot.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="RBValidRoot.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="RBValidRoot.Size" type="System.Drawing.Size, System.Drawing">
-    <value>14, 13</value>
-  </data>
-  <data name="BOpenProject.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="BOpenProject.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 352</value>
-  </data>
-  <data name="BOpenProject.Text" xml:space="preserve">
-    <value>Open</value>
-  </data>
   <data name="BRefreshEnv.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
   </data>
   <data name="BRefreshEnv.Location" type="System.Drawing.Point, System.Drawing">
-    <value>489, 352</value>
+    <value>489, 385</value>
   </data>
   <data name="BRefreshEnv.Text" xml:space="preserve">
     <value>Refresh</value>
@@ -166,7 +154,7 @@
     <value>538, 23</value>
   </data>
   <data name="GBPaths.Size" type="System.Drawing.Size, System.Drawing">
-    <value>570, 381</value>
+    <value>570, 414</value>
   </data>
   <data name="GBPaths.Text" xml:space="preserve">
     <value>Overview</value>
@@ -176,97 +164,70 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="TPEnvrionment.Size" type="System.Drawing.Size, System.Drawing">
-    <value>582, 393</value>
+    <value>582, 426</value>
   </data>
   <data name="TPEnvrionment.Text" xml:space="preserve">
     <value>Environment</value>
-  </data>
-  <data name="TVVariables.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="TVVariables.Size" type="System.Drawing.Size, System.Drawing">
-    <value>296, 228</value>
-  </data>
-  <data name="GBConfVariables.Size" type="System.Drawing.Size, System.Drawing">
-    <value>308, 256</value>
-  </data>
-  <data name="GBConfVariables.Text" xml:space="preserve">
-    <value>Variables</value>
-  </data>
-  <data name="TPConf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>582, 393</value>
-  </data>
-  <data name="TPConf.Text" xml:space="preserve">
-    <value>Configuration</value>
-  </data>
-  <data name="CLBIncludes.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="CLBIncludes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 22</value>
-  </data>
-  <data name="CLBIncludes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>333, 220</value>
-  </data>
-  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
-  </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>345, 250</value>
-  </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Binary Requirements</value>
-  </data>
-  <data name="TPBuild.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="TPBuild.Size" type="System.Drawing.Size, System.Drawing">
-    <value>582, 393</value>
-  </data>
-  <data name="TPBuild.Text" xml:space="preserve">
-    <value>Build</value>
   </data>
   <data name="TCVariables.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 27</value>
   </data>
   <data name="TCVariables.Size" type="System.Drawing.Size, System.Drawing">
-    <value>590, 421</value>
+    <value>590, 454</value>
   </data>
-  <data name="manifestToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 22</value>
-  </data>
-  <data name="manifestToolStripMenuItem.Text" xml:space="preserve">
-    <value>Manifest</value>
-  </data>
-  <data name="generateToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="TSMINewProject.Size" type="System.Drawing.Size, System.Drawing">
     <value>130, 22</value>
   </data>
-  <data name="generateToolStripMenuItem.Text" xml:space="preserve">
+  <data name="TSMINewProject.Text" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="TSSProject.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 6</value>
+  </data>
+  <data name="TSMIGenCodeAnalysis.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 22</value>
+  </data>
+  <data name="TSMIGenCodeAnalysis.Text" xml:space="preserve">
+    <value>Code Analysis</value>
+  </data>
+  <data name="mD5HashToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 22</value>
+  </data>
+  <data name="mD5HashToolStripMenuItem.Text" xml:space="preserve">
+    <value>Manifesto</value>
+  </data>
+  <data name="TSMIGenerate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 22</value>
+  </data>
+  <data name="TSMIGenerate.Text" xml:space="preserve">
     <value>Generate...</value>
   </data>
   <data name="TSMIProjects.Text" xml:space="preserve">
     <value>Project</value>
   </data>
-  <data name="TSMILove.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 22</value>
+  <data name="TSMIEditSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 22</value>
   </data>
-  <data name="TSMILove.Text" xml:space="preserve">
-    <value>LÖVE</value>
+  <data name="TSMIEditSettings.Text" xml:space="preserve">
+    <value>Edit</value>
   </data>
-  <data name="TSMIVersioning.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 22</value>
+  <data name="TSSSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 6</value>
   </data>
-  <data name="TSMIVersioning.Text" xml:space="preserve">
-    <value>Versioning</value>
+  <data name="TSMISaveSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 22</value>
   </data>
-  <data name="TSMISteam.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 22</value>
+  <data name="TSMISaveSettings.Text" xml:space="preserve">
+    <value>Save</value>
   </data>
-  <data name="TSMISteam.Text" xml:space="preserve">
-    <value>Steam</value>
+  <data name="TSMILoadSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 22</value>
   </data>
-  <data name="TSMITools.Text" xml:space="preserve">
-    <value>Tools</value>
+  <data name="TSMILoadSettings.Text" xml:space="preserve">
+    <value>Load</value>
+  </data>
+  <data name="TSMISettings.Text" xml:space="preserve">
+    <value>Settings</value>
   </data>
   <data name="TSMIExit.Text" xml:space="preserve">
     <value>Exit</value>
@@ -313,18 +274,6 @@
   <data name="LVersion.Text" xml:space="preserve">
     <value>Version Codename</value>
   </data>
-  <data name="LStatus.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="LStatus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 15</value>
-  </data>
-  <data name="LStatus.Text" xml:space="preserve">
-    <value>Progress</value>
-  </data>
-  <data name="PBOperation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>197, 23</value>
-  </data>
   <data name="CBOperation.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
   </data>
@@ -355,14 +304,17 @@
   <data name="BExecute.Text" xml:space="preserve">
     <value>Start</value>
   </data>
+  <data name="GBControls.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="GBControls.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 454</value>
+    <value>12, 487</value>
   </data>
   <data name="GBControls.Size" type="System.Drawing.Size, System.Drawing">
     <value>586, 62</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>614, 528</value>
+    <value>614, 561</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
