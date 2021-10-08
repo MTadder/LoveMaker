@@ -10,8 +10,30 @@ using System.Windows.Forms;
 
 namespace LoveMaker.Forms {
     public partial class LoveWizard : Form {
+        public String SelectedPath = String.Empty;
         public LoveWizard() {
             InitializeComponent();
+        }
+
+        private void BFromDisk_Click(Object sender, EventArgs e) {
+            FolderBrowserDialog fbd = new();
+            fbd.RootFolder = Environment.SpecialFolder.MyComputer;
+            fbd.ShowNewFolderButton = false;
+            fbd.ShowDialog(this);
+            this.SelectedPath = fbd.SelectedPath;
+            this.Close();
+        }
+
+        private void BFromRepo_Click(Object sender, EventArgs e) {
+        }
+
+        private void BFromTitle_Click(Object sender, EventArgs e) {
+            InputBox inp = new("Game Title", "Enter a name");
+            if (inp.ShowDialog(this) == DialogResult.OK) {
+                
+            } else {
+                this.Close();
+            }
         }
     }
 }

@@ -63,29 +63,7 @@ namespace LoveMaker {
             this.CBOperation.SelectedIndex = 0;
         }
 
-        private void CompileMoons() {
-            //void search(DirectoryInfo root, Executor e) {
-            //    foreach (FileInfo inf in root.EnumerateFiles()) {
-            //        if (inf.Extension.Contains("moon", StringComparison.OrdinalIgnoreCase)) {
-            //            e.StartingInfo.Arguments += inf.FullName+" ";
-            //        }
-            //    }
-            //    foreach (DirectoryInfo moduleinf in root.EnumerateDirectories()) {
-            //        search(moduleinf, e);
-            //    }
-            //}
-            //using (Executor compiler = new(this.Settings.Get("moonc"))) {
-            //    DirectoryInfo root = new(this.Settings.Get("workingDir"));
-            //    if (root.Exists) {
-            //        HashSet<String> moons = new();
-            //        search(root, compiler);
-            //    }
-            //    this.LogText(compiler.StartingInfo.Arguments);
-            //    //compiler.Start();
-            //}
-        }
-
-        private void BExecute_Click(Object sender, EventArgs e) {
+        private async void BExecute_Click(Object sender, EventArgs e) {
             switch (this.CBOperation.Text) {
                 case "":
                     String title = "Cannot Execute";
@@ -94,7 +72,8 @@ namespace LoveMaker {
                     _ = MessageBox.Show(msg, title, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     break;
                 case "Compile":
-                    this.CompileMoons();
+                    await this.Helper.Compile(this.Settings.Get("workingDir"));
+                    MessageBox.Show("Compiled!");
                     break;
                 case "Execute":
                     break;
@@ -150,12 +129,13 @@ namespace LoveMaker {
 
         private void CBValidRoot_CheckedChanged(Object sender, EventArgs e) {
             this.TSMINewProject.Enabled = !this.CBValidRoot.Checked;
+            this.TSMIGenerate.Enabled = this.CBValidRoot.Checked;
         }
 
         private void TSMINewProject_Click(Object sender, EventArgs e) {
             Forms.LoveWizard wizard = new();
-            wizard.Show();
-            //this.TBProjectPath.Text;
+            wizard.ShowDialog(this);
+            this.TBProjectPath.Text = wizard.SelectedPath;
         }
     }
 }

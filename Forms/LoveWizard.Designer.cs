@@ -39,6 +39,7 @@ namespace LoveMaker.Forms {
             this.BFromDisk.TabIndex = 0;
             this.BFromDisk.Text = "Project from Disk";
             this.BFromDisk.UseVisualStyleBackColor = false;
+            this.BFromDisk.Click += new System.EventHandler(this.BFromDisk_Click);
             // 
             // BFromRepo
             // 
@@ -50,6 +51,7 @@ namespace LoveMaker.Forms {
             this.BFromRepo.TabIndex = 1;
             this.BFromRepo.Text = "Project from Repository";
             this.BFromRepo.UseVisualStyleBackColor = false;
+            this.BFromRepo.Click += new System.EventHandler(this.BFromRepo_Click);
             // 
             // BFromTitle
             // 
@@ -61,6 +63,7 @@ namespace LoveMaker.Forms {
             this.BFromTitle.TabIndex = 2;
             this.BFromTitle.Text = "Project from Title";
             this.BFromTitle.UseVisualStyleBackColor = false;
+            this.BFromTitle.Click += new System.EventHandler(this.BFromTitle_Click);
             // 
             // LoveWizard
             // 
