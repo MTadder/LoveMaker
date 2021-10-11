@@ -72,8 +72,9 @@ namespace LoveMaker {
                     _ = MessageBox.Show(msg, title, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     break;
                 case "Compile":
+                    this.PBStatus.Value = 100;
                     await this.Helper.Compile(this.Settings.Get("workingDir"));
-                    MessageBox.Show("Compiled!");
+                    this.PBStatus.Value = 0;
                     break;
                 case "Execute":
                     break;

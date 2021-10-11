@@ -241,6 +241,9 @@
   <data name="GBControls.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left, Right</value>
   </data>
+  <data name="PBStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>203, 34</value>
+  </data>
   <data name="LOperation.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
   </data>

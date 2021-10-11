@@ -56,6 +56,7 @@ namespace LoveMaker
             this.TSMILoadSettings = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMIExit = new System.Windows.Forms.ToolStripMenuItem();
             this.GBControls = new System.Windows.Forms.GroupBox();
+            this.PBStatus = new System.Windows.Forms.ProgressBar();
             this.LOperation = new System.Windows.Forms.Label();
             this.TBVersion = new System.Windows.Forms.TextBox();
             this.LVersion = new System.Windows.Forms.Label();
@@ -241,6 +242,7 @@ namespace LoveMaker
             // GBControls
             // 
             resources.ApplyResources(this.GBControls, "GBControls");
+            this.GBControls.Controls.Add(this.PBStatus);
             this.GBControls.Controls.Add(this.LOperation);
             this.GBControls.Controls.Add(this.TBVersion);
             this.GBControls.Controls.Add(this.LVersion);
@@ -248,6 +250,11 @@ namespace LoveMaker
             this.GBControls.Controls.Add(this.BExecute);
             this.GBControls.Name = "GBControls";
             this.GBControls.TabStop = false;
+            // 
+            // PBStatus
+            // 
+            resources.ApplyResources(this.PBStatus, "PBStatus");
+            this.PBStatus.Name = "PBStatus";
             // 
             // LOperation
             // 
@@ -348,6 +355,7 @@ namespace LoveMaker
         private System.Windows.Forms.ToolStripSeparator TSSSettings;
         private System.Windows.Forms.ToolStripMenuItem TSMISaveSettings;
         private System.Windows.Forms.ToolStripMenuItem TSMILoadSettings;
+        private System.Windows.Forms.ProgressBar PBStatus;
     }
 }
 
