@@ -2,133 +2,101 @@
 using System.Threading.Tasks;
 using System.IO;
 using System.Collections.Generic;
-using System.Diagnostics;
 
 namespace LoveMaker {
     public class LoveHelper {
-        private static readonly String[] _keyPaths = {
+        public enum FileTypes { EXE, LUA, MOON }
+        internal static readonly String[] _keyPaths = {
             @"moonscript\", @"Moonscript\",
-            @"mingw\bin\", @"MinGW\bin\",
-            //@"love\", @"LOVE\"
+            @"mingw\bin\", @"MinGW\bin\"
         };
-
-        private static readonly String[] _keyCompilers = {
-            "moonc.exe", "luac.exe", //"lovec.exe"
-        };
-
-        private static readonly String[] _keyLoveFiles = {
+        internal static readonly String[] _keyCompilers = { "moonc.exe", "luac.exe" };
+        internal static readonly String[] _keyLoveFiles = {
             "main.lua", "conf.lua",
             "main.moon", "conf.moon"
         };
-
-        private void RemoveDuplicates() {
-            String last = String.Empty;
-            foreach (String item in this._keys) {
-                if (item.Equals(last, StringComparison.OrdinalIgnoreCase)) {
-                    _ = this._keys.Remove(item);
-                }
-            }
+        public LoveHelper() {
+            
+        }
+        internal static List<DirectoryInfo> GetFolders(String inPath) {
+            List<DirectoryInfo> gotDirs = new();
+            if (Directory.Exists(inPath)) {
+                foreach (String dir in Directory.GetDirectories(inPath)) {
+                    gotDirs.Add(new DirectoryInfo(dir));
+                } return gotDirs;
+            } throw new DirectoryNotFoundException($"{inPath} does not exist!");
         }
 
-        private HashSet<String> GetCompilables(String withinPath) {
-            HashSet<String> set = new();
+        internal static List<FileInfo> GetFiles(String inPath, Boolean recursive = false) {
+            List<FileInfo> gotFiles = new();
+            String targetPath = inPath;
+            if (recursive.Equals(true)) {
+                foreach (DirectoryInfo inf in GetFolders(targetPath)) {
+                    gotFiles.AddRange(GetFiles(inf.FullName));
+                }
+            } else {
+                foreach (String fileName in Directory.GetFiles(inPath)) {
+                    gotFiles.Add(new FileInfo(fileName));
+                }
+            } return gotFiles;
+        }
 
-            foreach (String candidateFile in Directory.EnumerateFiles(withinPath)) {
-                String[] nameSplit = candidateFile.Split(".");
-                try {
-                    String fileExt = nameSplit[nameSplit.Length - 1];
-                    Debug.Print(fileExt);
-                    if (fileExt.Length > 0) {
-                        foreach (String compilable in _keyLoveFiles) {
-                            if (fileExt.Contains(compilable.Split(".")[1],
-                                StringComparison.OrdinalIgnoreCase)) {
-                                _ = set.Add(candidateFile);
-                            }
+        public static List<FileInfo> GetFiles(String inPath, FileTypes fT, Boolean recursive) {
+            String extension = fT.ToString().ToLower();
+            StringComparison ignoreCase = StringComparison.OrdinalIgnoreCase;
+            List<FileInfo> gotFiles = GetFiles(inPath, recursive);
+            foreach (FileInfo gotFileInfo in gotFiles) {
+                if (gotFileInfo.Extension.Equals(extension, ignoreCase).Equals(false)) {
+                    _ = gotFiles.Remove(gotFileInfo);
+                }
+            } return gotFiles;
+        }
+
+        public static Boolean IsValidLOVEDirectory(String path, Boolean strict = false) {
+            Boolean mainL = false, confL = false;
+            StringComparison comp = StringComparison.OrdinalIgnoreCase;
+            foreach (String fFullName in Directory.GetFiles(path)) {
+                String[] fFullNameSplit = fFullName.Split(".");
+                if (fFullNameSplit.Length > 0 && fFullNameSplit.Length - 1 != 0) {
+                    String fName = fFullNameSplit[0];
+                    String fNameExt = fFullNameSplit[fFullNameSplit.Length - 1];
+                    if ("lua".Equals(fNameExt, comp) || "moon".Equals(fName, comp)) {
+                        if ("main".Equals(fName, comp)) {
+                            mainL = true;
+                            if (confL is true) {
+                                return true;
+                            } else if (strict is false) { return true; }
+                        } else if ("conf".Equals(fName, comp)) {
+                            confL = true;
+                            if (mainL is true) {
+                                return true;
+                            } else if (strict is false) { return true; }
                         }
                     }
-                } catch (IndexOutOfRangeException) { continue; }
-            }
-
-            return set;
-        }
-
-        private HashSet<String> _keys;
-
-        public LoveHelper(Boolean autosearch = false) {
-            this._keys = new();
-            if (autosearch is true) {
-                this.Search("C:");
-                this.Search(Environment.CurrentDirectory);
-                var specialFolders = (Environment.SpecialFolder[]) Enum.GetValues(typeof(Environment.SpecialFolder));
-                foreach (var spFolder in specialFolders) {
-                    String gotPath = Environment.GetFolderPath(spFolder,Environment.SpecialFolderOption.DoNotVerify);
-                    if (gotPath != String.Empty) {
-                        this.Search(gotPath);
-                    }
-                }
-            }
-        }
-
-        public String GetKeyfile(String key) {
-            foreach (String keyFilename in _keyCompilers) {
-                if (keyFilename.Equals(key)) {
-                    var keyExplorer = this._keys.GetEnumerator();
-                    while (keyExplorer.MoveNext()) {
-                        if (keyExplorer.Current.Contains(keyFilename, 
-                            StringComparison.OrdinalIgnoreCase))
-                            return keyExplorer.Current;
-                    }
-                }
-            } return String.Empty;
-        }
-
-        public void Search(String path) {
-            if (Directory.Exists(path)) {
-                foreach (String candidateDirName in _keyPaths) {
-                    String candidatePath = path +@"\"+ candidateDirName;
-                    if (Directory.Exists(candidatePath))
-                        foreach (String candidateFilename in _keyCompilers) {
-                            String candidateFilePath = candidatePath + candidateFilename;
-                            if (File.Exists(candidateFilePath))
-                                _ = this._keys.Add(candidateFilePath);
-                        }
-                }
-            }
-            this.RemoveDuplicates();
-        }
-
-        public async Task Compile(String rootDir) {
-            using (Process compilerProc = new()) {
-                compilerProc.StartInfo.CreateNoWindow = true;
-                try {
-                    foreach (String keyCompiler in _keyCompilers) {
-                        String cPath = this.GetKeyfile(keyCompiler);
-                        if (File.Exists(cPath)) {
-                            compilerProc.StartInfo.FileName = cPath;
-                            foreach (String argFile in this.GetCompilables(rootDir)) {
-                                String[] argFileExts = argFile.Split(".");
-                                String argFileExt = argFileExts[argFileExts.Length - 1];
-                                if (keyCompiler.Contains(argFileExt, StringComparison.OrdinalIgnoreCase)) {
-                                    compilerProc.StartInfo.Arguments += "\"" + argFile + "\" ";
-                                }
-                            }
-                            _ = compilerProc.Start();
-                            await compilerProc.WaitForExitAsync();
-                        }
-                    }
-                    return;
-                } catch { throw; }
-            }
-        }
-
-        public static Boolean IsLoveDirectory(String path) {
-            if (Directory.Exists(path)) {
-                foreach (String keyLoveFilename in _keyLoveFiles) {
-                    if (File.Exists(path +@"\"+ keyLoveFilename)) {
-                        return true; // Match any keyLoveFile
-                    }
-                }
+                } else { continue; }
             } return false;
         }
+        //public async Task Compile(String rootDir) {
+        //    using (Process compilerProc = new()) {
+        //        compilerProc.StartInfo.CreateNoWindow = true;
+        //        try {
+        //            foreach (String keyCompiler in _keyCompilers) {
+        //                String cPath = this.GetKeyfile(keyCompiler);
+        //                if (File.Exists(cPath)) {
+        //                    compilerProc.StartInfo.FileName = cPath;
+        //                    foreach (String argFile in this.GetCompilables(rootDir)) {
+        //                        String[] argFileExts = argFile.Split(".");
+        //                        String argFileExt = argFileExts[argFileExts.Length - 1];
+        //                        if (keyCompiler.Contains(argFileExt, StringComparison.OrdinalIgnoreCase)) {
+        //                            compilerProc.StartInfo.Arguments += "\"" + argFile + "\" ";
+        //                        }
+        //                    }
+        //                    _ = compilerProc.Start();
+        //                    await compilerProc.WaitForExitAsync();
+        //                }
+        //            } return;
+        //        } catch { throw; }
+        //    }
+        //}
     }
 }

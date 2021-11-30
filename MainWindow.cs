@@ -35,26 +35,25 @@ namespace LoveMaker {
             this.TBLuaPath.Text = this.Settings.Get("luac");
             this.TBMoonPath.Text = this.Settings.Get("moonc");
             if (this.TBLuaPath.Text.Length < 1) {
-                this.TBLuaPath.Text = this.Helper.GetKeyfile("luac.exe");
+                //this.TBLuaPath.Text = this.Helper.GetKeyfile("luac.exe");
             }
             if (this.TBMoonPath.Text.Length < 1) {
-                this.TBMoonPath.Text = this.Helper.GetKeyfile("moonc.exe");
+                //this.TBMoonPath.Text = this.Helper.GetKeyfile("moonc.exe");
             }
         }
 
         private Action OnRootValid = () => {
-            
+
         };
         private Action OnRootInvalid = () => {
 
         };
 
         public DictionaryFile Settings;
-        public LoveHelper Helper;
         public MainWindow() {
             InitializeComponent();
 
-            this.Helper = new(true);
+            //this.Helper = new(true);
             this.Settings = new("setttings.bin");
         }
 
@@ -63,7 +62,7 @@ namespace LoveMaker {
             this.CBOperation.SelectedIndex = 0;
         }
 
-        private async void BExecute_Click(Object sender, EventArgs e) {
+        private void BExecute_Click(Object sender, EventArgs e) {
             switch (this.CBOperation.Text) {
                 case "":
                     String title = "Cannot Execute";
@@ -72,8 +71,25 @@ namespace LoveMaker {
                     _ = MessageBox.Show(msg, title, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     break;
                 case "Compile":
+                    static Boolean SearchForLuas(String inPath) {
+                        foreach (String candidateDir in Directory.EnumerateDirectories(inPath +@"\")) {
+                            foreach (String candidateFile in Directory.EnumerateFiles(candidateDir)) {
+                                String[] candidateFileParts = candidateFile.Split(".");
+                                if (candidateFileParts.Length > 1) {
+                                    return candidateFileParts[candidateFileParts.Length - 1].Contains("lua",
+                                    StringComparison.OrdinalIgnoreCase);
+                                }
+                            }
+                        } return false;
+                    }
                     this.PBStatus.Value = 100;
-                    await this.Helper.Compile(this.Settings.Get("workingDir"));
+                    String workingDir = this.Settings.Get("workingDir");
+                    //await this.Helper.Compile(workingDir);
+                    if (SearchForLuas(workingDir)) {
+                        this.LogCase(true, "Found luas!");
+                    } else {
+                        this.LogCase(false, "no luas found!");
+                    }
                     this.PBStatus.Value = 0;
                     break;
                 case "Execute":
@@ -116,7 +132,7 @@ namespace LoveMaker {
         private void TBProjectPath_TextChanged(Object sender, EventArgs e) {
             String got = this.TBProjectPath.Text;
             Boolean workingDir = Directory.Exists(got);
-            Boolean loveExists = LoveHelper.IsLoveDirectory(got);
+            Boolean loveExists = LoveHelper.IsValidLOVEDirectory(got, false);
             Boolean combo = workingDir && loveExists;
             if (combo is true) {
                 this.Settings.Set("workingDir", got);
@@ -135,7 +151,7 @@ namespace LoveMaker {
 
         private void TSMINewProject_Click(Object sender, EventArgs e) {
             Forms.LoveWizard wizard = new();
-            wizard.ShowDialog(this);
+            _ = wizard.ShowDialog(this);
             this.TBProjectPath.Text = wizard.SelectedPath;
         }
     }
