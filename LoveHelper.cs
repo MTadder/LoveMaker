@@ -5,19 +5,6 @@ using System.Collections.Generic;
 
 namespace LoveMaker {
     public class LoveHelper {
-        public enum FileTypes { EXE, LUA, MOON }
-        internal static readonly String[] _keyPaths = {
-            @"moonscript\", @"Moonscript\",
-            @"mingw\bin\", @"MinGW\bin\"
-        };
-        internal static readonly String[] _keyCompilers = { "moonc.exe", "luac.exe" };
-        internal static readonly String[] _keyLoveFiles = {
-            "main.lua", "conf.lua",
-            "main.moon", "conf.moon"
-        };
-        public LoveHelper() {
-            
-        }
         internal static List<DirectoryInfo> GetFolders(String inPath) {
             List<DirectoryInfo> gotDirs = new();
             if (Directory.Exists(inPath)) {
@@ -26,7 +13,6 @@ namespace LoveMaker {
                 } return gotDirs;
             } throw new DirectoryNotFoundException($"{inPath} does not exist!");
         }
-
         internal static List<FileInfo> GetFiles(String inPath, Boolean recursive = false) {
             List<FileInfo> gotFiles = new();
             String targetPath = inPath;
@@ -40,63 +26,31 @@ namespace LoveMaker {
                 }
             } return gotFiles;
         }
-
-        public static List<FileInfo> GetFiles(String inPath, FileTypes fT, Boolean recursive) {
-            String extension = fT.ToString().ToLower();
-            StringComparison ignoreCase = StringComparison.OrdinalIgnoreCase;
-            List<FileInfo> gotFiles = GetFiles(inPath, recursive);
-            foreach (FileInfo gotFileInfo in gotFiles) {
-                if (gotFileInfo.Extension.Equals(extension, ignoreCase).Equals(false)) {
-                    _ = gotFiles.Remove(gotFileInfo);
+        public static List<FileInfo> GetFiles(String inPath, String? withExtension, Boolean recursive = false) {
+            List<FileInfo> files = GetFiles(inPath, recursive);
+            if (String.IsNullOrEmpty(withExtension)) { return files; }
+            foreach (FileInfo fI in files) {
+                if (fI.Extension.Equals(withExtension).Equals(false)) {
+                    _ = files.Remove(fI);
                 }
-            } return gotFiles;
+            }
+            return files;
         }
-
-        public static Boolean IsValidLOVEDirectory(String path, Boolean strict = false) {
-            Boolean mainL = false, confL = false;
-            StringComparison comp = StringComparison.OrdinalIgnoreCase;
-            foreach (String fFullName in Directory.GetFiles(path)) {
-                String[] fFullNameSplit = fFullName.Split(".");
-                if (fFullNameSplit.Length > 0 && fFullNameSplit.Length - 1 != 0) {
-                    String fName = fFullNameSplit[0];
-                    String fNameExt = fFullNameSplit[fFullNameSplit.Length - 1];
-                    if ("lua".Equals(fNameExt, comp) || "moon".Equals(fName, comp)) {
-                        if ("main".Equals(fName, comp)) {
-                            mainL = true;
-                            if (confL is true) {
-                                return true;
-                            } else if (strict is false) { return true; }
-                        } else if ("conf".Equals(fName, comp)) {
-                            confL = true;
-                            if (mainL is true) {
-                                return true;
-                            } else if (strict is false) { return true; }
+        public static Boolean HasGit(String path) {
+            return Directory.Exists(path + @"\.git");
+        }
+        public static Boolean HasLove(String path, Boolean strict = false) {
+            if (Directory.Exists(path)) {
+                List<FileInfo> files = GetFiles(path, strict ? "lua" : null, false);
+                if (files.Count != 0) {
+                    foreach (FileInfo fI in files) {
+                        if (fI.FullName.Contains("main", StringComparison.CurrentCulture)) {
+                            return true;
                         }
                     }
-                } else { continue; }
-            } return false;
+                }
+            }
+            return false;
         }
-        //public async Task Compile(String rootDir) {
-        //    using (Process compilerProc = new()) {
-        //        compilerProc.StartInfo.CreateNoWindow = true;
-        //        try {
-        //            foreach (String keyCompiler in _keyCompilers) {
-        //                String cPath = this.GetKeyfile(keyCompiler);
-        //                if (File.Exists(cPath)) {
-        //                    compilerProc.StartInfo.FileName = cPath;
-        //                    foreach (String argFile in this.GetCompilables(rootDir)) {
-        //                        String[] argFileExts = argFile.Split(".");
-        //                        String argFileExt = argFileExts[argFileExts.Length - 1];
-        //                        if (keyCompiler.Contains(argFileExt, StringComparison.OrdinalIgnoreCase)) {
-        //                            compilerProc.StartInfo.Arguments += "\"" + argFile + "\" ";
-        //                        }
-        //                    }
-        //                    _ = compilerProc.Start();
-        //                    await compilerProc.WaitForExitAsync();
-        //                }
-        //            } return;
-        //        } catch { throw; }
-        //    }
-        //}
     }
 }

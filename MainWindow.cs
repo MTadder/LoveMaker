@@ -7,6 +7,16 @@ using MTLibrary;
 
 namespace LoveMaker {
     public partial class MainWindow : Form {
+        private void CheckGit() {
+            if (LoveHelper.HasGit(this.TBProjectPath.Text)) {
+                if (this.CBOperation.Items.Contains("Git Commit") == false) {
+                    this.CBOperation.Items.Insert(1, "Git Commit");
+                }
+            } else {
+                this.CBOperation.Items.Remove("Git Commit");
+            }
+            
+        }
         private void LogText(String text) {
             if (this.TBRuntimeLog != null) {
                 this.TBRuntimeLog.Text += text.Trim() + Environment.NewLine;
@@ -19,47 +29,106 @@ namespace LoveMaker {
                 this.LogText("- " + invoker);
             }
         }
-        private void LogAction(Action a, String purpose) {
-            try { a.Invoke(); } catch (Exception e) {
-                this.LogCase(false, $"{purpose} ({e.Message})");
-                return;
-            }
-            this.LogCase(true, purpose);
-        }
 
         private void SetPaths() {
-            this.TBProjectPath.Text = this.Settings.Get("workingDir");
-            if (this.TBProjectPath.Text.Length < 1) {
-                this.TBProjectPath.Text = Environment.CurrentDirectory;
-            }
+            String workingDir = this.Settings.Get("workingDir");
+            this.TBProjectPath.Text = String.IsNullOrEmpty(workingDir) ? Environment.CurrentDirectory : workingDir;
             this.TBLuaPath.Text = this.Settings.Get("luac");
             this.TBMoonPath.Text = this.Settings.Get("moonc");
-            if (this.TBLuaPath.Text.Length < 1) {
-                //this.TBLuaPath.Text = this.Helper.GetKeyfile("luac.exe");
+        }
+        private void AnnotateFilesTV(String rootDir) {
+            DirectoryInfo rootDirInf = new(rootDir);
+            static void AnnotateNode(TreeNode tN) {
+                // FileInfo fI = new((String) tN.Tag);
+                if (tN.Text.Contains('.')) {
+                    tN.ImageIndex = 2;
+                } else if (Directory.Exists((String) tN.Tag)) {
+                    tN.ImageIndex = 0;
+                    return;
+                }
+                if (tN.Text.Contains(".exe")) {
+                    return;
+                }
+                if (tN.Text.Contains(".love") || tN.Text.Contains(".zip") ||
+                    tN.Text.Contains(".lib") || tN.Text.Contains(".dll") ||
+                    tN.Text.Contains(".so") || tN.Text.Contains(".dylib")) {
+                    tN.ImageIndex = 3;
+                    return;
+                }
+                if (tN.Text.Contains(".bin")) {
+                    tN.ImageIndex = 7;
+                    return;
+                }
             }
-            if (this.TBMoonPath.Text.Length < 1) {
-                //this.TBMoonPath.Text = this.Helper.GetKeyfile("moonc.exe");
+            static void Annotate(TreeNode tN) {
+                foreach (TreeNode childNode in tN.Nodes) {
+                    Annotate(childNode);
+                }
+                AnnotateNode(tN);
+            }
+            foreach (TreeNode tN in this.TVFileStructure.Nodes) {
+                Annotate(tN);
             }
         }
-
-        private Action OnRootValid = () => {
-
-        };
-        private Action OnRootInvalid = () => {
-
-        };
+        private void UpdateFilesTV() {
+            this.TVFileStructure.Nodes.Clear();
+            var enume = this.ILFileTypes.Images.Keys.GetEnumerator();
+            while (enume.MoveNext()) {
+                this.LogText(enume.Current ?? "null!");
+            }
+            if (String.IsNullOrEmpty(this.TBProjectPath.Text) is not true) {
+                void loadFiles(String dir, TreeNode parent) {
+                    DirectoryInfo dI = new(dir);
+                    foreach (FileInfo fInf in dI.GetFiles()) {
+                        TreeNode tN = parent.Nodes.Add(fInf.Name);
+                        tN.Tag = (String) fInf.FullName;
+                    }
+                }
+                void loadSubDirs(String dir, TreeNode parent) {
+                    DirectoryInfo dI = new(dir);
+                    DirectoryInfo[] dirs = dI.GetDirectories();
+                    foreach (DirectoryInfo dInf in dirs) {
+                        TreeNode tN = parent.Nodes.Add(dInf.Name);
+                        tN.Tag = (String) dInf.FullName;
+                        loadFiles(dInf.FullName, tN);
+                        loadSubDirs(dInf.FullName, tN);
+                    }
+                }
+                void loadDir(String dir) {
+                    DirectoryInfo dI = new(dir);
+                    TreeNode tN = TVFileStructure.Nodes.Add(dI.Name);
+                    tN.Tag = dI.FullName;
+                    loadFiles(dI.FullName, tN);
+                    loadSubDirs(dI.FullName, tN);
+                    tN.Expand();
+                }
+                String path = this.TBProjectPath.Text.Trim();
+                loadDir(path);
+                AnnotateFilesTV(path);
+            }
+        }
 
         public DictionaryFile Settings;
         public MainWindow() {
             InitializeComponent();
-
-            //this.Helper = new(true);
-            this.Settings = new("setttings.bin");
+            this.Settings = new("settings.bin");
         }
 
         private void MainWindow_Load(Object sender, EventArgs e) {
             this.SetPaths();
             this.CBOperation.SelectedIndex = 0;
+            FSWLister.Changed += this.FSWLister_FileChanged;
+            FSWLister.Created += this.FSWLister_FileChanged;
+            FSWLister.Deleted += this.FSWLister_FileChanged;
+            this.FSWLister_FileChanged(null, null);
+        }
+        private void FSWLister_FileChanged(Object? sender, FileSystemEventArgs? e) {
+            if (this.TVFileStructure.InvokeRequired) {
+                MethodInvoker iUpdateFiles= new(UpdateFilesTV);
+                _ = this.TVFileStructure.Invoke(iUpdateFiles);
+            } else {
+                UpdateFilesTV();
+            }
         }
 
         private void BExecute_Click(Object sender, EventArgs e) {
@@ -119,6 +188,16 @@ namespace LoveMaker {
                 this.Settings.Set("luac", got);
             }
         }
+        private void TBLuaPath_DoubleClick(Object sender, EventArgs e) {
+            OpenFileDialog oFD = new();
+            oFD.FileName = "lua.exe";
+            oFD.CheckFileExists = true;
+            oFD.CheckPathExists = true;
+            DialogResult res = oFD.ShowDialog(this);
+            if (res.Equals(DialogResult.OK)) {
+                this.TBLuaPath.Text = oFD.FileName;
+            }
+        }
 
         private void TBMoonPath_TextChanged(Object sender, EventArgs e) {
             String got = this.TBMoonPath.Text.Trim();
@@ -128,31 +207,93 @@ namespace LoveMaker {
                 this.Settings.Set("moonc", got);
             }
         }
+        private void TBMoonPath_DoubleClick(Object sender, EventArgs e) {
+            OpenFileDialog oFD = new();
+            oFD.FileName = "moonc.exe";
+            oFD.CheckFileExists = true;
+            oFD.CheckPathExists = true;
+            DialogResult res = oFD.ShowDialog(this);
+            if (res.Equals(DialogResult.OK)) {
+                this.TBMoonPath.Text = oFD.FileName;
+            }
+        }
 
         private void TBProjectPath_TextChanged(Object sender, EventArgs e) {
             String got = this.TBProjectPath.Text;
             Boolean workingDir = Directory.Exists(got);
-            Boolean loveExists = LoveHelper.IsValidLOVEDirectory(got, false);
+            Boolean loveExists = LoveHelper.HasLove(got, false);
             Boolean combo = workingDir && loveExists;
             if (combo is true) {
                 this.Settings.Set("workingDir", got);
-                this.LogAction(this.OnRootValid, "Root Validation");
-            } else {
-                this.LogAction(this.OnRootInvalid, "Root Invalidation");
+                this.LogCase(combo, $"{got} is a valid LOVE game!");
             }
+            this.CheckGit();
             this.CBValidRoot.Checked = combo;
             this.GBControls.Enabled = combo;
         }
+        private void TBProjectPath_DoubleClick(Object sender, EventArgs e) {
+            FolderBrowserDialog fbd = new();
+            fbd.RootFolder = Environment.SpecialFolder.MyComputer;
+            fbd.ShowNewFolderButton = false;
+            DialogResult res = fbd.ShowDialog(this);
+            if (res.Equals(DialogResult.OK)) {
+                this.TBProjectPath.Text = fbd.SelectedPath.Trim();
+            }
+        }
 
         private void CBValidRoot_CheckedChanged(Object sender, EventArgs e) {
-            this.TSMINewProject.Enabled = !this.CBValidRoot.Checked;
-            this.TSMIGenerate.Enabled = this.CBValidRoot.Checked;
+            Boolean ch = this.CBValidRoot.Checked;
+            this.TSMIGenerate.Enabled = ch;
+            FSWLister.EnableRaisingEvents = ch;
+            
+            if (ch is true) {
+                FSWLister.Path = this.TBProjectPath.Text.Trim();
+            }
         }
 
         private void TSMINewProject_Click(Object sender, EventArgs e) {
             Forms.LoveWizard wizard = new();
             _ = wizard.ShowDialog(this);
             this.TBProjectPath.Text = wizard.SelectedPath;
+        }
+
+        private void TSMIResetSettings_Click(Object sender, EventArgs e) {
+            this.Settings.Clear();
+            BRefreshEnv.PerformClick();
+        }
+
+        private void TSMISaveSettings_Click(Object sender, EventArgs e) {
+            SaveFileDialog sFD = new();
+            String name = this.Settings.FileName;
+            sFD.FileName = String.IsNullOrEmpty(name) ? "" : name;
+            sFD.AddExtension = true;
+            sFD.CreatePrompt = false;
+            sFD.Filter = "Binary Files|*.bin|Any|*.*";
+            sFD.CheckPathExists = true;
+            sFD.OverwritePrompt = true;
+            DialogResult res = sFD.ShowDialog(this);
+            if (res.Equals(DialogResult.OK)) {
+                DictionaryFile dfExp = new(this.Settings, sFD.FileName);
+                dfExp.Load(); dfExp.Save();
+            }
+        }
+
+        private void TSMILoadSettings_Click(Object sender, EventArgs e) {
+            OpenFileDialog oFD = new();
+            oFD.Filter = "Binary Files|*.bin|Any|*.*";
+            oFD.CheckFileExists = true;
+            oFD.CheckPathExists = true;
+            DialogResult res = oFD.ShowDialog(this);
+            if (res.Equals(DialogResult.OK)) {
+                try {
+                    this.Settings = new(oFD.FileName);
+                } catch { }
+            }
+            BRefreshEnv.PerformClick();
+        }
+
+        private void TSMIEditSettings_Click(Object sender, EventArgs e) {
+            this.Settings.Load();
         }
     }
 }

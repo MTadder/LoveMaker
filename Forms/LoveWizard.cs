@@ -19,12 +19,20 @@ namespace LoveMaker.Forms {
             FolderBrowserDialog fbd = new();
             fbd.RootFolder = Environment.SpecialFolder.MyComputer;
             fbd.ShowNewFolderButton = false;
-            fbd.ShowDialog(this);
-            this.SelectedPath = fbd.SelectedPath;
-            this.Close();
+            var res = fbd.ShowDialog(this);
+            if (res.Equals(DialogResult.OK)) {
+                this.SelectedPath = fbd.SelectedPath;
+                this.Close();
+            }
         }
 
         private void BFromRepo_Click(Object sender, EventArgs e) {
+            InputBox inp = new("Remote Clone", "Enter a repository link");
+            if (inp.ShowDialog(this) == DialogResult.OK) {
+
+            } else {
+                this.Close();
+            }
         }
 
         private void BFromTitle_Click(Object sender, EventArgs e) {
