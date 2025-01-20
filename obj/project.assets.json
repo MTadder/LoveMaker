@@ -1,0 +1,104 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0-windows7.0": {
+      "MTLib/0.1.5": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/MTLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MTLib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MTLib/0.1.5": {
+      "type": "project",
+      "path": "../MTLib/MTLib.csproj",
+      "msbuildProject": "../MTLib/MTLib.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0-windows7.0": [
+      "MTLib >= 0.1.5"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\MTadder\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "0.1.6",
+    "restore": {
+      "projectUniqueName": "D:\\_Development\\LoveMaker\\LoveMaker.csproj",
+      "projectName": "LoveMaker",
+      "projectPath": "D:\\_Development\\LoveMaker\\LoveMaker.csproj",
+      "packagesPath": "C:\\Users\\MTadder\\.nuget\\packages\\",
+      "outputPath": "D:\\_Development\\LoveMaker\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\MTadder\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+      },
+      "frameworks": {
+        "net9.0-windows7.0": {
+          "targetAlias": "net9.0-windows",
+          "projectReferences": {
+            "D:\\_Development\\MTLib\\MTLib.csproj": {
+              "projectPath": "D:\\_Development\\MTLib\\MTLib.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.100"
+    },
+    "frameworks": {
+      "net9.0-windows7.0": {
+        "targetAlias": "net9.0-windows",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

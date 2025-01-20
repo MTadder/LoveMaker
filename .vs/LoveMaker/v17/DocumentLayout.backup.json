@@ -1,0 +1,336 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\_Development\\LoveMaker\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{061C4FC7-DD79-4EE1-9723-D7D3C0CC79D9}|LoveMaker.csproj|D:\\_Development\\LoveMaker\\librarystore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{061C4FC7-DD79-4EE1-9723-D7D3C0CC79D9}|LoveMaker.csproj|solutionrelative:librarystore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB3F4D60-FB5B-4827-833F-13FE97CA661C}|..\\MTLib\\MTLib.csproj|d:\\_development\\mtlib\\utilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB3F4D60-FB5B-4827-833F-13FE97CA661C}|..\\MTLib\\MTLib.csproj|d:\\_development\\mtlib\\terminal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB3F4D60-FB5B-4827-833F-13FE97CA661C}|..\\MTLib\\MTLib.csproj|d:\\_development\\mtlib\\secure\\salt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB3F4D60-FB5B-4827-833F-13FE97CA661C}|..\\MTLib\\MTLib.csproj|d:\\_development\\mtlib\\secure\\dictionaryfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB3F4D60-FB5B-4827-833F-13FE97CA661C}|..\\MTLib\\MTLib.csproj|d:\\_development\\mtlib\\secure\\authenticator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB3F4D60-FB5B-4827-833F-13FE97CA661C}|..\\MTLib\\MTLib.csproj|d:\\_development\\mtlib\\metaconstructs\\metaconstructs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB3F4D60-FB5B-4827-833F-13FE97CA661C}|..\\MTLib\\MTLib.csproj|d:\\_development\\mtlib\\metaconstructs\\fields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB3F4D60-FB5B-4827-833F-13FE97CA661C}|..\\MTLib\\MTLib.csproj|d:\\_development\\mtlib\\general\\symbolicgrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB3F4D60-FB5B-4827-833F-13FE97CA661C}|..\\MTLib\\MTLib.csproj|d:\\_development\\mtlib\\generative\\syntacticgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB3F4D60-FB5B-4827-833F-13FE97CA661C}|..\\MTLib\\MTLib.csproj|d:\\_development\\mtlib\\mtlib.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{061C4FC7-DD79-4EE1-9723-D7D3C0CC79D9}|LoveMaker.csproj|d:\\_development\\lovemaker\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{061C4FC7-DD79-4EE1-9723-D7D3C0CC79D9}|LoveMaker.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{061C4FC7-DD79-4EE1-9723-D7D3C0CC79D9}|LoveMaker.csproj|d:\\_development\\lovemaker\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{061C4FC7-DD79-4EE1-9723-D7D3C0CC79D9}|LoveMaker.csproj|solutionrelative:mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{061C4FC7-DD79-4EE1-9723-D7D3C0CC79D9}|LoveMaker.csproj|d:\\_development\\lovemaker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{061C4FC7-DD79-4EE1-9723-D7D3C0CC79D9}|LoveMaker.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB3F4D60-FB5B-4827-833F-13FE97CA661C}|..\\MTLib\\MTLib.csproj|d:\\_development\\mtlib\\general\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB3F4D60-FB5B-4827-833F-13FE97CA661C}|..\\MTLib\\MTLib.csproj|d:\\_development\\mtlib\\metaconstructs\\amplitudes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB3F4D60-FB5B-4827-833F-13FE97CA661C}|..\\MTLib\\MTLib.csproj|d:\\_development\\mtlib\\metainfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{061C4FC7-DD79-4EE1-9723-D7D3C0CC79D9}|LoveMaker.csproj|d:\\_development\\lovemaker\\librarystore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{061C4FC7-DD79-4EE1-9723-D7D3C0CC79D9}|LoveMaker.csproj|solutionrelative:librarystore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{061C4FC7-DD79-4EE1-9723-D7D3C0CC79D9}|LoveMaker.csproj|D:\\_Development\\LoveMaker\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{061C4FC7-DD79-4EE1-9723-D7D3C0CC79D9}|LoveMaker.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{061C4FC7-DD79-4EE1-9723-D7D3C0CC79D9}|LoveMaker.csproj|d:\\_development\\lovemaker\\libraryexplorer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{061C4FC7-DD79-4EE1-9723-D7D3C0CC79D9}|LoveMaker.csproj|solutionrelative:libraryexplorer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "D:\\_Development\\LoveMaker\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "D:\\_Development\\LoveMaker\\MainForm.cs [Design]",
+              "RelativeToolTip": "MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T08:48:05.796Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LibraryStore.cs [Design]",
+              "DocumentMoniker": "D:\\_Development\\LoveMaker\\LibraryStore.cs",
+              "RelativeDocumentMoniker": "LibraryStore.cs",
+              "ToolTip": "D:\\_Development\\LoveMaker\\LibraryStore.cs [Design]",
+              "RelativeToolTip": "LibraryStore.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T13:39:17.527Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DictionaryFile.cs",
+              "DocumentMoniker": "D:\\_Development\\MTLib\\Secure\\DictionaryFile.cs",
+              "RelativeDocumentMoniker": "..\\MTLib\\Secure\\DictionaryFile.cs",
+              "ToolTip": "D:\\_Development\\MTLib\\Secure\\DictionaryFile.cs",
+              "RelativeToolTip": "..\\MTLib\\Secure\\DictionaryFile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T06:41:18.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MTLib",
+              "DocumentMoniker": "D:\\_Development\\MTLib\\MTLib.csproj",
+              "RelativeDocumentMoniker": "..\\MTLib\\MTLib.csproj",
+              "ToolTip": "D:\\_Development\\MTLib\\MTLib.csproj",
+              "RelativeToolTip": "..\\MTLib\\MTLib.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-20T06:12:55.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Authenticator.cs",
+              "DocumentMoniker": "D:\\_Development\\MTLib\\Secure\\Authenticator.cs",
+              "RelativeDocumentMoniker": "..\\MTLib\\Secure\\Authenticator.cs",
+              "ToolTip": "D:\\_Development\\MTLib\\Secure\\Authenticator.cs",
+              "RelativeToolTip": "..\\MTLib\\Secure\\Authenticator.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAywBMAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T01:54:08.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Metaconstructs.cs",
+              "DocumentMoniker": "D:\\_Development\\MTLib\\Metaconstructs\\Metaconstructs.cs",
+              "RelativeDocumentMoniker": "..\\MTLib\\Metaconstructs\\Metaconstructs.cs",
+              "ToolTip": "D:\\_Development\\MTLib\\Metaconstructs\\Metaconstructs.cs",
+              "RelativeToolTip": "..\\MTLib\\Metaconstructs\\Metaconstructs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T01:53:32.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Fields.cs",
+              "DocumentMoniker": "D:\\_Development\\MTLib\\Metaconstructs\\Fields.cs",
+              "RelativeDocumentMoniker": "..\\MTLib\\Metaconstructs\\Fields.cs",
+              "ToolTip": "D:\\_Development\\MTLib\\Metaconstructs\\Fields.cs",
+              "RelativeToolTip": "..\\MTLib\\Metaconstructs\\Fields.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAA2wBEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T01:52:44.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Amplitudes.cs",
+              "DocumentMoniker": "D:\\_Development\\MTLib\\Metaconstructs\\Amplitudes.cs",
+              "RelativeDocumentMoniker": "..\\MTLib\\Metaconstructs\\Amplitudes.cs",
+              "ToolTip": "D:\\_Development\\MTLib\\Metaconstructs\\Amplitudes.cs",
+              "RelativeToolTip": "..\\MTLib\\Metaconstructs\\Amplitudes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T01:52:43.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Token.cs",
+              "DocumentMoniker": "D:\\_Development\\MTLib\\General\\Token.cs",
+              "RelativeDocumentMoniker": "..\\MTLib\\General\\Token.cs",
+              "ToolTip": "D:\\_Development\\MTLib\\General\\Token.cs",
+              "RelativeToolTip": "..\\MTLib\\General\\Token.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T01:52:36.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SymbolicGrid.cs",
+              "DocumentMoniker": "D:\\_Development\\MTLib\\General\\SymbolicGrid.cs",
+              "RelativeDocumentMoniker": "..\\MTLib\\General\\SymbolicGrid.cs",
+              "ToolTip": "D:\\_Development\\MTLib\\General\\SymbolicGrid.cs",
+              "RelativeToolTip": "..\\MTLib\\General\\SymbolicGrid.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAvwDQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T01:51:52.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SyntacticGenerator.cs",
+              "DocumentMoniker": "D:\\_Development\\MTLib\\Generative\\SyntacticGenerator.cs",
+              "RelativeDocumentMoniker": "..\\MTLib\\Generative\\SyntacticGenerator.cs",
+              "ToolTip": "D:\\_Development\\MTLib\\Generative\\SyntacticGenerator.cs",
+              "RelativeToolTip": "..\\MTLib\\Generative\\SyntacticGenerator.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAswHMAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T01:48:52.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MetaInfo.cs",
+              "DocumentMoniker": "D:\\_Development\\MTLib\\MetaInfo.cs",
+              "RelativeDocumentMoniker": "..\\MTLib\\MetaInfo.cs",
+              "ToolTip": "D:\\_Development\\MTLib\\MetaInfo.cs",
+              "RelativeToolTip": "..\\MTLib\\MetaInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T01:41:54.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Terminal.cs",
+              "DocumentMoniker": "D:\\_Development\\MTLib\\Terminal.cs",
+              "RelativeDocumentMoniker": "..\\MTLib\\Terminal.cs",
+              "ToolTip": "D:\\_Development\\MTLib\\Terminal.cs",
+              "RelativeToolTip": "..\\MTLib\\Terminal.cs",
+              "ViewState": "AgIAADABAAAAAAAAAAAgwDsBAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T01:41:06.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Utilities.cs",
+              "DocumentMoniker": "D:\\_Development\\MTLib\\Utilities.cs",
+              "RelativeDocumentMoniker": "..\\MTLib\\Utilities.cs",
+              "ToolTip": "D:\\_Development\\MTLib\\Utilities.cs",
+              "RelativeToolTip": "..\\MTLib\\Utilities.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T01:41:03.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\_Development\\LoveMaker\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\_Development\\LoveMaker\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T01:30:28.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LibraryStore.cs",
+              "DocumentMoniker": "D:\\_Development\\LoveMaker\\LibraryStore.cs",
+              "RelativeDocumentMoniker": "LibraryStore.cs",
+              "ToolTip": "D:\\_Development\\LoveMaker\\LibraryStore.cs",
+              "RelativeToolTip": "LibraryStore.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T13:58:47.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "LibraryExplorer.cs",
+              "DocumentMoniker": "D:\\_Development\\LoveMaker\\LibraryExplorer.cs",
+              "RelativeDocumentMoniker": "LibraryExplorer.cs",
+              "ToolTip": "D:\\_Development\\LoveMaker\\LibraryExplorer.cs",
+              "RelativeToolTip": "LibraryExplorer.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAgwA0AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T11:29:32.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MainForm.Designer.cs",
+              "DocumentMoniker": "D:\\_Development\\LoveMaker\\MainForm.Designer.cs",
+              "RelativeDocumentMoniker": "MainForm.Designer.cs",
+              "ToolTip": "D:\\_Development\\LoveMaker\\MainForm.Designer.cs",
+              "RelativeToolTip": "MainForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T02:56:56.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Salt.cs",
+              "DocumentMoniker": "D:\\_Development\\MTLib\\Secure\\Salt.cs",
+              "RelativeDocumentMoniker": "..\\MTLib\\Secure\\Salt.cs",
+              "ToolTip": "D:\\_Development\\MTLib\\Secure\\Salt.cs",
+              "RelativeToolTip": "..\\MTLib\\Secure\\Salt.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T02:47:13.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "D:\\_Development\\LoveMaker\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "D:\\_Development\\LoveMaker\\MainForm.cs",
+              "RelativeToolTip": "MainForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T08:59:25.508Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

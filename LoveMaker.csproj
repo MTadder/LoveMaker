@@ -1,79 +1,62 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
-    <UseWindowsForms>true</UseWindowsForms>
-    <StartupObject>LoveMaker.MainProgram</StartupObject>
-    <ApplicationIcon>LoveMaker.ico</ApplicationIcon>
+    <TargetFramework>net9.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
-    <Version>0.5.20.21</Version>
-    <Authors>MTadder</Authors>
-    <Company>MTLaboratory</Company>
-    <Description>LOVE Development Suite</Description>
-    <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <RepositoryUrl>https://github.com/MTadder/LoveMaker</RepositoryUrl>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <StartupObject>LoveMaker.Program</StartupObject>
+    <ApplicationIcon>LoveMaker.ico</ApplicationIcon>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <SignAssembly>False</SignAssembly>
+    <ErrorReport>send</ErrorReport>
+    <Title>LoveMaker</Title>
+	<ApplicationVisualStyles>true</ApplicationVisualStyles>
+	<ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
+	<!--
+		ver. format: major.minor.build.revision
+	-->
+	<Version>0.1.6.0</Version>
+    <AssemblyVersion></AssemblyVersion>
+    <FileVersion></FileVersion>
+	<Authors>MTadder</Authors>
+	<Company>MTLaboratory</Company>
     <PackageIcon>LoveMaker.png</PackageIcon>
-    <PackageIconUrl />
-    <RepositoryType>Git</RepositoryType>
-    <PackageTags>Development Suite, LOVE, LOVE2D, LoveMaker</PackageTags>
-    <NeutralLanguage>en-CA</NeutralLanguage>
-    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>MTKey.pfx</AssemblyOriginatorKeyFile>
-    <DelaySign>true</DelaySign>
+    <NeutralLanguage>en</NeutralLanguage>
+    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <IncludeSymbols>True</IncludeSymbols>
+    <AnalysisLevel>latest-all</AnalysisLevel>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <ErrorReport>prompt</ErrorReport>
-    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
-    <FileAlignment>512</FileAlignment>
-    <DebugType>full</DebugType>
-    <DebugSymbols>true</DebugSymbols>
-    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-    <WarningsAsErrors />
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DefineConstants>DEBUG</DefineConstants>
+    <NoWarn>1701;1702;1591</NoWarn>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <WarningLevel>9999</WarningLevel>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DefineConstants>TRACE</DefineConstants>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <WarningsAsErrors />
-    <ErrorReport>prompt</ErrorReport>
-    <FileAlignment>512</FileAlignment>
-    <DebugType>portable</DebugType>
-    <DebugSymbols>true</DebugSymbols>
+    <NoWarn>1701;1702;1591</NoWarn>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <WarningLevel>9999</WarningLevel>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MTLibrary\MTLibrary.csproj" />
+    <Content Include="LoveMaker.ico" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Properties\Resources.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
+    <None Include="LibraryExplorer.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
+    <ProjectReference Include="..\MTLib\MTLib.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="LICENSE">
+    <None Update="LoveMaker.png">
       <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
-    <None Include="LoveMaker.png">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
+      <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
 
