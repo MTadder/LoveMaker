@@ -24,88 +24,31 @@ partial class LibraryStore {
     /// the contents of this method with the code editor.
     /// </summary>
     private void InitializeComponent() {
-        this.components = new System.ComponentModel.Container();
         var listViewGroup1 = new ListViewGroup("utilities", HorizontalAlignment.Center);
-        var listViewItem1 = new ListViewItem("hump", 8);
-        var listViewItem2 = new ListViewItem("omk", 0);
         var resources = new System.ComponentModel.ComponentResourceManager(typeof(LibraryStore));
         this.Libraries = new ListView();
-        this.imageList1 = new ImageList(this.components);
         this.Cancel = new Button();
         this.Install = new Button();
         this.Docs = new Button();
+        this.Refresh = new Button();
         this.SuspendLayout();
         // 
         // Libraries
         // 
+        this.Libraries.Alignment = ListViewAlignment.SnapToGrid;
         this.Libraries.GridLines = true;
         listViewGroup1.Header = "utilities";
         listViewGroup1.HeaderAlignment = HorizontalAlignment.Center;
         listViewGroup1.Name = "lvg_utils";
         this.Libraries.Groups.AddRange(new ListViewGroup[] { listViewGroup1 });
-        listViewItem1.Group = listViewGroup1;
-        listViewItem2.Group = listViewGroup1;
-        this.Libraries.Items.AddRange(new ListViewItem[] { listViewItem1, listViewItem2 });
-        this.Libraries.LargeImageList = this.imageList1;
-        this.Libraries.Location = new Point(12, 12);
+        this.Libraries.Location = new Point(12, 41);
         this.Libraries.MultiSelect = false;
         this.Libraries.Name = "Libraries";
-        this.Libraries.Size = new Size(292, 336);
-        this.Libraries.SmallImageList = this.imageList1;
-        this.Libraries.StateImageList = this.imageList1;
+        this.Libraries.Size = new Size(292, 307);
         this.Libraries.TabIndex = 0;
         this.Libraries.UseCompatibleStateImageBehavior = false;
-        this.Libraries.View = View.SmallIcon;
+        this.Libraries.View = View.List;
         this.Libraries.SelectedIndexChanged += this.Libraries_SelectedIndexChanged;
-        // 
-        // imageList1
-        // 
-        this.imageList1.ColorDepth = ColorDepth.Depth32Bit;
-        this.imageList1.ImageStream = (ImageListStreamer) resources.GetObject("imageList1.ImageStream");
-        this.imageList1.TransparentColor = Color.Transparent;
-        this.imageList1.Images.SetKeyName(0, "alert.png");
-        this.imageList1.Images.SetKeyName(1, "apple.png");
-        this.imageList1.Images.SetKeyName(2, "archive.png");
-        this.imageList1.Images.SetKeyName(3, "asterisk.png");
-        this.imageList1.Images.SetKeyName(4, "bug.png");
-        this.imageList1.Images.SetKeyName(5, "checkmark.png");
-        this.imageList1.Images.SetKeyName(6, "close.png");
-        this.imageList1.Images.SetKeyName(7, "code.png");
-        this.imageList1.Images.SetKeyName(8, "code-working.png");
-        this.imageList1.Images.SetKeyName(9, "compose.png");
-        this.imageList1.Images.SetKeyName(10, "cube.png");
-        this.imageList1.Images.SetKeyName(11, "disc.png");
-        this.imageList1.Images.SetKeyName(12, "document.png");
-        this.imageList1.Images.SetKeyName(13, "document-text.png");
-        this.imageList1.Images.SetKeyName(14, "down.png");
-        this.imageList1.Images.SetKeyName(15, "efficient.png");
-        this.imageList1.Images.SetKeyName(16, "folder.png");
-        this.imageList1.Images.SetKeyName(17, "git.png");
-        this.imageList1.Images.SetKeyName(18, "grid.png");
-        this.imageList1.Images.SetKeyName(19, "halt.png");
-        this.imageList1.Images.SetKeyName(20, "help.png");
-        this.imageList1.Images.SetKeyName(21, "help-circled.png");
-        this.imageList1.Images.SetKeyName(22, "left.png");
-        this.imageList1.Images.SetKeyName(23, "link.png");
-        this.imageList1.Images.SetKeyName(24, "locked.png");
-        this.imageList1.Images.SetKeyName(25, "minus.png");
-        this.imageList1.Images.SetKeyName(26, "music.png");
-        this.imageList1.Images.SetKeyName(27, "navicon.png");
-        this.imageList1.Images.SetKeyName(28, "network.png");
-        this.imageList1.Images.SetKeyName(29, "pinpoint.png");
-        this.imageList1.Images.SetKeyName(30, "playstation.png");
-        this.imageList1.Images.SetKeyName(31, "plus.png");
-        this.imageList1.Images.SetKeyName(32, "program.png");
-        this.imageList1.Images.SetKeyName(33, "pull.png");
-        this.imageList1.Images.SetKeyName(34, "right.png");
-        this.imageList1.Images.SetKeyName(35, "settings.png");
-        this.imageList1.Images.SetKeyName(36, "social-android.png");
-        this.imageList1.Images.SetKeyName(37, "sparse.png");
-        this.imageList1.Images.SetKeyName(38, "star.png");
-        this.imageList1.Images.SetKeyName(39, "steam.png");
-        this.imageList1.Images.SetKeyName(40, "trash-b.png");
-        this.imageList1.Images.SetKeyName(41, "unavailable.png");
-        this.imageList1.Images.SetKeyName(42, "up.png");
         // 
         // Cancel
         // 
@@ -137,6 +80,17 @@ partial class LibraryStore {
         this.Docs.TabIndex = 3;
         this.Docs.Text = "go to documentation";
         this.Docs.UseVisualStyleBackColor = true;
+        this.Docs.Click += this.Docs_Click;
+        // 
+        // Refresh
+        // 
+        this.Refresh.Location = new Point(12, 12);
+        this.Refresh.Name = "Refresh";
+        this.Refresh.Size = new Size(75, 23);
+        this.Refresh.TabIndex = 1;
+        this.Refresh.Text = "refresh";
+        this.Refresh.UseVisualStyleBackColor = true;
+        this.Refresh.Click += this.Refresh_Click;
         // 
         // LibraryStore
         // 
@@ -145,6 +99,7 @@ partial class LibraryStore {
         this.ClientSize = new Size(316, 389);
         this.Controls.Add(this.Docs);
         this.Controls.Add(this.Install);
+        this.Controls.Add(this.Refresh);
         this.Controls.Add(this.Cancel);
         this.Controls.Add(this.Libraries);
         this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
@@ -161,8 +116,8 @@ partial class LibraryStore {
     #endregion
 
     private ListView Libraries;
-    private ImageList imageList1;
     private Button Cancel;
     private Button Install;
     private Button Docs;
+    private Button Refresh;
 }

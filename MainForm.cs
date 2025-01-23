@@ -1,5 +1,5 @@
 namespace LoveMaker {
-    public partial class MainForm: Form {
+    internal partial class MainForm: Form {
         private static MTLib.Secure.DictionaryFile<String, String> settings = new("settings.mtdb");
         private static MTLib.Secure.Salt secret_salt = new(8);
         public MainForm() {
@@ -18,7 +18,8 @@ namespace LoveMaker {
         }
 
         private void LibraryStore_Click(Object sender, EventArgs e) {
-            _ = new LibraryStore().ShowDialog();
+            using LibraryStore store = new();
+            _ = store.ShowDialog();
         }
     }
 }
